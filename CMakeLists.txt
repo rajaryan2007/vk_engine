@@ -14,7 +14,7 @@ FetchContent_MakeAvailable(glfw)
 
 find_package(Vulkan REQUIRED)
 
-add_executable(vk_engine application.cpp)
+add_executable(vk_engine application.cc)
 
 target_link_libraries(vk_engine
     glfw
