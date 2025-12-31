@@ -1,61 +1,50 @@
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+#include "application.hh"
+#include "Logger.h"  
+#include "instance.hh"
 
-#include <iostream>
-#include <stdexcept>
-#include <cstdlib>
+constexpr uint32_t WIDTH = 800;
+constexpr uint32_t HEIGHT = 600;
 
-const uint32_t WIDTH = 800;
-const uint32_t HEIGHT = 600;
-
-class HelloTriangleApplication {
-public:
-    void run() {
-        initWindow();
-        initVulkan();
-        mainLoop();
-        cleanup();
-    }
-
-private:
-    GLFWwindow* window;
-
-    void initWindow() {
-        glfwInit();
-
-        glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-        glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-
-        window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan", nullptr, nullptr);
-    }
-
-    void initVulkan() {
-
-    }
-
-    void mainLoop() {
-        while (!glfwWindowShouldClose(window)) {
-            glfwPollEvents();
-        }
-    }
-
-    void cleanup() {
-        glfwDestroyWindow(window);
-
-        glfwTerminate();
-    }
-};
-
-int main() {
-    HelloTriangleApplication app;
-
-    try {
-        app.run();
-    }
-    catch (const std::exception& e) {
-        std::cerr << e.what() << std::endl;
-        return EXIT_FAILURE;
-    }
-
-    return EXIT_SUCCESS;
+void Application::run() {
+	initWindow();
+	initVulkan();
+	mainLoop();
+	cleanup();
 }
+
+void Application::initVulkan() {
+	
+	LOG("Vulkan initialized.");
+	VulkanInstance instance;
+	instance.setupDebugMessenger();
+    
+}
+
+void Application::mainLoop(){
+	LOG("Entering main loop.");
+	while (!glfwWindowShouldClose(m_window))
+	{
+		glfwPollEvents();
+	}
+}
+
+void Application::cleanup() {
+	LOG("Cleanup complete.");
+	glfwDestroyWindow(m_window);
+	glfwTerminate();
+}
+
+
+void Application::initWindow() {
+	LOG("window complete.");
+	glfwInit();
+	if (!glfwInit()) {
+		throw std::runtime_error("Failed to initialize GLFW");
+	}
+	glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+	m_window = glfwCreateWindow(800, 600, "Vulkan Window", nullptr, nullptr);
+	if (m_window == nullptr) {
+		throw std::runtime_error("Failed to create GLFW window");
+	}
+}
+
