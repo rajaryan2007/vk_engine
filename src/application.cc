@@ -1,6 +1,8 @@
 #include "application.hh"
 #include "Logger.h"  
 #include "instance.hh"
+#include "physicalDevice.hh"
+#include "LogicalDevice.hh"
 
 constexpr uint32_t WIDTH = 800;
 constexpr uint32_t HEIGHT = 600;
@@ -17,7 +19,15 @@ void Application::initVulkan() {
 	LOG("Vulkan initialized.");
 	VulkanInstance instance;
 	instance.setupDebugMessenger();
-    
+	
+	LogicalDevice helloLogical;
+	helloLogical.createSurface(instance,m_window);
+	PhysicalDevice Physicaldevice(instance);
+	helloLogical.findLogicaldevice(Physicaldevice);
+	
+
+	
+
 }
 
 void Application::mainLoop(){

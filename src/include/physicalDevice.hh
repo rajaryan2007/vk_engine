@@ -12,6 +12,9 @@ class PhysicalDevice {
 public:
 	PhysicalDevice(VulkanInstance& myInstanceWrapper);
 	~PhysicalDevice();
+
+	vk::raii::PhysicalDevice& device() { return m_physical_device; }
+
 private:
 	vk::raii::PhysicalDevice m_physical_device = nullptr;
 	
