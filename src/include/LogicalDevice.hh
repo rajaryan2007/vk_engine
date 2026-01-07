@@ -1,3 +1,4 @@
+#pragma once
 #include "physicalDevice.hh"
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
@@ -7,8 +8,11 @@
 class LogicalDevice {
 public:
 	LogicalDevice();
+	
 	void findLogicaldevice(PhysicalDevice& physicalDevice);
 	void createSurface(VulkanInstance& Instance, GLFWwindow* window);
+	vk::raii::SurfaceKHR& getSurface() { return surface; }
+	vk::raii::Device& getLogicalDevice() { return m_logicalDevice; }
 	~LogicalDevice();
 private:
 	vk::raii::Device m_logicalDevice = nullptr;

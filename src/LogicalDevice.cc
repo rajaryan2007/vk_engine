@@ -1,6 +1,8 @@
 #include "LogicalDevice.hh"
 #include <algorithm>
 #include <assert.h>
+#include "Logger.h"
+
 LogicalDevice::LogicalDevice()
     : m_logicalDevice(nullptr), m_graphicsQueue(nullptr), requiredDeviceExtension{
         vk::KHRSwapchainExtensionName,
@@ -50,14 +52,6 @@ void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice)
 
 	m_logicalDevice = vk::raii::Device(physicalDev, deviceCreateInfo);
 	m_graphicsQueue = vk::raii::Queue(m_logicalDevice, queueIndex, 0);
-
-    
-    
-
-
-
-
-
 }
 
 void LogicalDevice::createSurface(VulkanInstance& Instance, GLFWwindow* window)
@@ -77,4 +71,5 @@ void LogicalDevice::createSurface(VulkanInstance& Instance, GLFWwindow* window)
 
 LogicalDevice::~LogicalDevice()
 {
+	LOG("LogicalDevice Destructor");
 }

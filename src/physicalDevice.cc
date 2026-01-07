@@ -5,11 +5,19 @@
 #include "Logger.h"
 #include <iostream>
 
-PhysicalDevice::PhysicalDevice(VulkanInstance& myInstanceWrapper)
-    
+PhysicalDevice::PhysicalDevice()
+
 {
-	auto const& instance = myInstanceWrapper.instance();
-   
+    
+
+
+}
+
+void PhysicalDevice::createPhysicalDevice(VulkanInstance& myInstanceWrapper)
+{
+    LOG("PhysicalDevice Constructor");
+    auto const& instance = myInstanceWrapper.instance();
+
     std::vector<vk::raii::PhysicalDevice> devices = instance.enumeratePhysicalDevices();
     const auto                            devIter = std::ranges::find_if(
         devices,
@@ -45,8 +53,6 @@ PhysicalDevice::PhysicalDevice(VulkanInstance& myInstanceWrapper)
     {
         throw std::runtime_error("failed to find a suitable GPU!");
     }
-
-   
 }
 
 PhysicalDevice::~PhysicalDevice()

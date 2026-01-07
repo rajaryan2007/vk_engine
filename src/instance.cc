@@ -8,18 +8,26 @@ constexpr bool enableValidationLayers = false;
 #else
 constexpr bool enableValidationLayers = true;
 #endif
+#include "Logger.h"
 
 
 
 VulkanInstance::VulkanInstance()
 	: m_instance(nullptr), m_context()
 {
+	
+	
+	
+}
+
+void VulkanInstance::createInstance()
+{
 	VkApplicationInfo appInfo{};
 	appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
 	appInfo.pApplicationName = "vk_engine";
 	appInfo.applicationVersion = VK_MAKE_VERSION(1, 0, 0);
 	appInfo.pEngineName = "No Engine";
-	appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);	
+	appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
 	appInfo.apiVersion = VK_API_VERSION_1_0;
 
 	std::vector<const char*> requiredLayers;
@@ -43,27 +51,49 @@ VulkanInstance::VulkanInstance()
 	for (auto const& requiredExtension : requiredExtensions) {
 		if (std::ranges::none_of(extensionProperties, [&requiredExtension](auto const& extensionProperty) {
 			return strcmp(extensionProperty.extensionName, requiredExtension) == 0;
-		})) {
+			})) {
 			throw std::runtime_error("Required extension not supported: " + std::string(requiredExtension));
 		}
 	}
+
+
+	vk::DebugUtilsMessengerCreateInfoEXT debugCreateInfo{};
+	if (enableValidationLayers) {
+		debugCreateInfo.messageSeverity =
+			vk::DebugUtilsMessageSeverityFlagBitsEXT::eVerbose |
+			vk::DebugUtilsMessageSeverityFlagBitsEXT::eWarning |
+			vk::DebugUtilsMessageSeverityFlagBitsEXT::eError;
+
+		debugCreateInfo.messageType =
+			vk::DebugUtilsMessageTypeFlagBitsEXT::eGeneral |
+			vk::DebugUtilsMessageTypeFlagBitsEXT::eValidation |
+			vk::DebugUtilsMessageTypeFlagBitsEXT::ePerformance;
+
+		debugCreateInfo.pfnUserCallback = debugCallback;
+	}
+
 
 	VkInstanceCreateInfo createInfo{};
 	createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
 	createInfo.pApplicationInfo = &appInfo;
 	createInfo.enabledLayerCount = static_cast<uint32_t>(requiredLayers.size()),
-    createInfo.ppEnabledLayerNames = requiredLayers.data();
+		createInfo.ppEnabledLayerNames = requiredLayers.data();
 	createInfo.enabledExtensionCount = static_cast<uint32_t>(requiredExtensions.size());
 	createInfo.ppEnabledExtensionNames = requiredExtensions.empty() ? nullptr : requiredExtensions.data();;
+	if (enableValidationLayers) {
+		createInfo.pNext = &debugCreateInfo;
+	}
 
 	m_instance = vk::raii::Instance(m_context, createInfo);
-	
-	
+	if (enableValidationLayers) {
+		m_debugMessenger =
+			vk::raii::DebugUtilsMessengerEXT(m_instance, debugCreateInfo);
+	}
 }
 
 VulkanInstance::~VulkanInstance()
 {
-	// m_instance will be destroyed automatically by vk::raii
+	LOG("VulkanInstance Destructor");
 }
 
 
@@ -72,28 +102,7 @@ vk::raii::Instance& VulkanInstance::instance()
 	return m_instance;
 }
 
-void VulkanInstance::setupDebugMessenger()
-{
-	if (!enableValidationLayers) return;
 
-	vk::DebugUtilsMessageSeverityFlagsEXT severityFlags(
-		vk::DebugUtilsMessageSeverityFlagBitsEXT::eVerbose |
-		vk::DebugUtilsMessageSeverityFlagBitsEXT::eWarning |
-		vk::DebugUtilsMessageSeverityFlagBitsEXT::eError
-	);
-	vk::DebugUtilsMessageTypeFlagsEXT messageTypeFlags(
-		vk::DebugUtilsMessageTypeFlagBitsEXT::eGeneral |
-		vk::DebugUtilsMessageTypeFlagBitsEXT::eValidation |
-		vk::DebugUtilsMessageTypeFlagBitsEXT::ePerformance
-	);
-
-	vk::DebugUtilsMessengerCreateInfoEXT debugUtilsMessengerCreateInfoEXT{};
-	debugUtilsMessengerCreateInfoEXT.messageSeverity = severityFlags;
-	debugUtilsMessengerCreateInfoEXT.messageType = messageTypeFlags;
-	debugUtilsMessengerCreateInfoEXT.pfnUserCallback = debugCallback;
-
-	m_debugMessenger = m_instance.createDebugUtilsMessengerEXT(debugUtilsMessengerCreateInfoEXT);
-}
 
 std::vector<const char*> VulkanInstance::getRequiredExtensions()
 {   

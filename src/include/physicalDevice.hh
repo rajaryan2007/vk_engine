@@ -10,8 +10,9 @@ import vulkan_hpp;
 
 class PhysicalDevice {
 public:
-	PhysicalDevice(VulkanInstance& myInstanceWrapper);
+	PhysicalDevice();
 	~PhysicalDevice();
+	void createPhysicalDevice(VulkanInstance& myInstanceWrapper);
 
 	vk::raii::PhysicalDevice& device() { return m_physical_device; }
 
