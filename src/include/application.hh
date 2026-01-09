@@ -5,7 +5,7 @@
 #include "physicalDevice.hh"
 #include "LogicalDevice.hh"
 #include "swapchain.hh"
-
+#include "GrapicPipeline.hh"
 
 class Application {
 public:
@@ -22,5 +22,6 @@ private:
 	PhysicalDevice m_physicalDevice;
 	LogicalDevice m_logicalDevice;
 	Swapchain m_swapchain;
+	GrapicPileline m_graphicPipeline;
 
 };

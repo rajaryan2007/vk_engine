@@ -21,6 +21,7 @@ void Application::initVulkan() {
 	m_logicalDevice.findLogicaldevice(m_physicalDevice);
 	m_swapchain.createSwapChain(m_physicalDevice, m_logicalDevice, *m_window);
 	m_swapchain.createImageViews(m_logicalDevice);
+	m_graphicPipeline.Init(m_logicalDevice);
 }
 
 void Application::mainLoop(){
