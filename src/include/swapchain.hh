@@ -29,6 +29,8 @@ public:
 	static uint32_t chooseSwapMinImageCount(vk::SurfaceCapabilitiesKHR const& surfaceCapabilities);
 	void createImageViews(LogicalDevice& device);
 	const vk::Extent2D& GetExtent() const { return swapChainExtent; }
+	const vk::SurfaceFormatKHR GetSurfaceFormat() const { return swapChainSurfaceFormat; };
+	
 
 private:
 	vk::raii::SwapchainKHR           swapChain = nullptr;

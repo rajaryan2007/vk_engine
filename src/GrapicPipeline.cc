@@ -15,22 +15,26 @@ GrapicPileline::~GrapicPileline()
 	LOG("GrapicPipeline destroy")
 }
 
-void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent)
+
+
+void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, vk::SurfaceFormatKHR swapChainSurfaceFormat)
 {
 	LOG("GrapicPipeline Init")
 	vk::raii::ShaderModule shaderModule = createShaderModule(readFile("shader/slang.spv"),Device);
 	vk::PipelineShaderStageCreateInfo vertShaderStageInfo{};
 	vertShaderStageInfo.stage = vk::ShaderStageFlagBits::eVertex;
 	vertShaderStageInfo.module = shaderModule;
-	vertShaderStageInfo.pName = "vertmain";
+	vertShaderStageInfo.pName = "vertMain";
 
 	vk::PipelineShaderStageCreateInfo fragShaderStageInfo{};
 	fragShaderStageInfo.stage = vk::ShaderStageFlagBits::eFragment;
 	fragShaderStageInfo.module = shaderModule;
-	fragShaderStageInfo.pName = "fragmain";
+	fragShaderStageInfo.pName = "fragMain";
 
 	vk::PipelineShaderStageCreateInfo shaderStages[] = { vertShaderStageInfo, fragShaderStageInfo };
     
+	vk::PipelineVertexInputStateCreateInfo   vertexInputInfo;
+
 	std::vector dynamicStates = {
 	   vk::DynamicState::eViewport,
 	   vk::DynamicState::eScissor
@@ -40,12 +44,16 @@ void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent)
 	dynamicState.dynamicStateCount = static_cast<uint32_t>(dynamicStates.size());
 	dynamicState.pDynamicStates = dynamicStates.data();
 
+
 	vk::PipelineInputAssemblyStateCreateInfo inputAssembly{};
 	inputAssembly.topology = vk::PrimitiveTopology::eTriangleList;
 	
 	vk::Viewport{ 0.0f,0.0f,static_cast<float>(swapChainExtent.width),static_cast<float>(swapChainExtent.height),0.0f,1.0f };
 
-	
+	vk::PipelineViewportStateCreateInfo      viewportState{};
+	viewportState.viewportCount = 1;
+	viewportState.scissorCount = 1;
+
 
 	vk::PipelineRasterizationStateCreateInfo rasterizer(
 		{},                         // flags
@@ -84,6 +92,32 @@ void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent)
 	colorBlending.logicOp = vk::LogicOp::eCopy;
 	colorBlending.attachmentCount = 1;
 	colorBlending.pAttachments = &colorBlendAttachment;
+
+	vk::PipelineLayoutCreateInfo pipelineLayoutInfo{};
+	pipelineLayoutInfo.setLayoutCount = 0;
+	pipelineLayoutInfo.pushConstantRangeCount = 0;
+
+	pipelineLayout = vk::raii::PipelineLayout(Device.getLogicalDevice(), pipelineLayoutInfo);
+	vk::Format colorFormat = swapChainSurfaceFormat.format;
+	vk::PipelineRenderingCreateInfo pipelineRenderCreateInfo{};
+	pipelineRenderCreateInfo.colorAttachmentCount = 1;
+	pipelineRenderCreateInfo.pColorAttachmentFormats = &colorFormat;
+
+	vk::GraphicsPipelineCreateInfo pipelineInfo{};
+	pipelineInfo.pNext = &pipelineRenderCreateInfo;
+	pipelineInfo.stageCount = 2;
+	pipelineInfo.pStages = shaderStages;
+	pipelineInfo.pVertexInputState = &vertexInputInfo;
+	pipelineInfo.pInputAssemblyState = &inputAssembly;
+	pipelineInfo.pViewportState = &viewportState;
+	pipelineInfo.pRasterizationState = &rasterizer;
+	pipelineInfo.pMultisampleState = &multisampling;
+	pipelineInfo.pColorBlendState = &colorBlending;
+	pipelineInfo.pDynamicState = &dynamicState;
+	pipelineInfo.layout = pipelineLayout;
+	pipelineInfo.renderPass = nullptr;
+
+	graphicsPipeline = vk::raii::Pipeline(Device.getLogicalDevice(), nullptr, pipelineInfo);
 
 }
 
