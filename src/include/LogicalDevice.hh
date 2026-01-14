@@ -13,8 +13,11 @@ public:
 	void createSurface(VulkanInstance& Instance, GLFWwindow* window);
 	vk::raii::SurfaceKHR& getSurface() { return surface; }
 	vk::raii::Device& getLogicalDevice() { return m_logicalDevice; }
+	uint32_t getQueueIndex() { return queueIndex; }
 	~LogicalDevice();
+
 private:
+	uint32_t queueIndex = ~0;
 	vk::raii::Device m_logicalDevice = nullptr;
 	vk::raii::Queue m_graphicsQueue = nullptr;
 	vk::raii::SurfaceKHR surface = nullptr;

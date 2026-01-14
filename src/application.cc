@@ -22,6 +22,9 @@ void Application::initVulkan() {
 	m_swapchain.createSwapChain(m_physicalDevice, m_logicalDevice, *m_window);
 	m_swapchain.createImageViews(m_logicalDevice);
 	m_graphicPipeline.Init(m_logicalDevice,m_swapchain.GetExtent(),m_swapchain.GetSurfaceFormat());
+	m_CommandPool.Init(m_logicalDevice);
+	m_CommandPool.createCommandBuffer(m_logicalDevice);
+
 }
 
 void Application::mainLoop(){

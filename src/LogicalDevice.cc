@@ -18,7 +18,7 @@ void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice)
 	auto const& physicalDev = physicalDevice.device();
 	std::vector<vk::QueueFamilyProperties> queueFamilyProperties = physicalDev.getQueueFamilyProperties();
 
-	uint32_t queueIndex = ~0;
+	
 	for (uint32_t qfqIndex = 0; qfqIndex < queueFamilyProperties.size(); qfqIndex++) {
 		if ((queueFamilyProperties[qfqIndex].queueFlags & vk::QueueFlagBits::eGraphics) && physicalDev.getSurfaceSupportKHR(qfqIndex, *surface))
 		{
