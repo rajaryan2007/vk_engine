@@ -1,0 +1,10 @@
+C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/vk_engine.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/INSTALL.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/CMakeFiles/uninstall.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/CMakeFiles/INSTALL.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/CMakeFiles/ALL_BUILD.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/src/CMakeFiles/glfw.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/src/CMakeFiles/update_mappings.dir
+C:/Users/rion/Documents/vs code/vk_engine/build/external/glfw/src/CMakeFiles/INSTALL.dir

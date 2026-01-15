@@ -1,0 +1,2056 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 15-01-2026 08:22:05 PM.
+      
+      Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:02.79
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/4.1.0-rc3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link.com"
+      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link.exe"
+      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Neovim/bin/lld-link.com"
+      - "C:/Program Files/Neovim/bin/lld-link.exe"
+      - "C:/Program Files/Neovim/bin/lld-link"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/premake5/lld-link.com"
+      - "C:/premake5/lld-link.exe"
+      - "C:/premake5/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.com"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
+      - "C:/ninja-win/lld-link.com"
+      - "C:/ninja-win/lld-link.exe"
+      - "C:/ninja-win/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.com"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link.exe"
+      - "C:/Program Files (x86)/IncrediBuild/lld-link"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/Users/rion/.dotnet/tools/lld-link.com"
+      - "C:/Users/rion/.dotnet/tools/lld-link.exe"
+      - "C:/Users/rion/.dotnet/tools/lld-link"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/lld-link"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/lld-link"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/lld-link.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/lld-link.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/lld-link"
+      - "C:/Users/rion/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/rion/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/rion/AppData/Roaming/npm/lld-link"
+      - "C:/Users/rion/.bun/bin/lld-link.com"
+      - "C:/Users/rion/.bun/bin/lld-link.exe"
+      - "C:/Users/rion/.bun/bin/lld-link"
+      - "C:/vcpkg/lld-link.com"
+      - "C:/vcpkg/lld-link.exe"
+      - "C:/vcpkg/lld-link"
+      - "C:/Program Files/LLVM/bin/lld-link.com"
+    found: "C:/Program Files/LLVM/bin/lld-link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/VulkanSDK/1.4.321.1/Bin/mt.com"
+      - "C:/VulkanSDK/1.4.321.1/Bin/mt.exe"
+      - "C:/VulkanSDK/1.4.321.1/Bin/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/Neovim/bin/mt.com"
+      - "C:/Program Files/Neovim/bin/mt.exe"
+      - "C:/Program Files/Neovim/bin/mt"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/mt.com"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/mt.exe"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/premake5/mt.com"
+      - "C:/premake5/mt.exe"
+      - "C:/premake5/mt"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.com"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/mt"
+      - "C:/Program Files/PowerShell/7/mt.com"
+      - "C:/Program Files/PowerShell/7/mt.exe"
+      - "C:/Program Files/PowerShell/7/mt"
+      - "C:/ninja-win/mt.com"
+      - "C:/ninja-win/mt.exe"
+      - "C:/ninja-win/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files (x86)/IncrediBuild/mt.com"
+      - "C:/Program Files (x86)/IncrediBuild/mt.exe"
+      - "C:/Program Files (x86)/IncrediBuild/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/mt"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt.com"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt"
+      - "C:/MinGW/bin/mt.com"
+      - "C:/MinGW/bin/mt.exe"
+      - "C:/MinGW/bin/mt"
+      - "C:/Users/rion/.dotnet/tools/mt.com"
+      - "C:/Users/rion/.dotnet/tools/mt.exe"
+      - "C:/Users/rion/.dotnet/tools/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/mt"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/mt"
+      - "C:/Users/rion/AppData/Roaming/npm/mt.com"
+      - "C:/Users/rion/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/rion/AppData/Roaming/npm/mt"
+      - "C:/Users/rion/.bun/bin/mt.com"
+      - "C:/Users/rion/.bun/bin/mt.exe"
+      - "C:/Users/rion/.bun/bin/mt"
+      - "C:/vcpkg/mt.com"
+      - "C:/vcpkg/mt.exe"
+      - "C:/vcpkg/mt"
+      - "C:/Program Files/LLVM/bin/mt.com"
+      - "C:/Program Files/LLVM/bin/mt.exe"
+      - "C:/Program Files/LLVM/bin/mt"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.14.23+b0019275e for .NET Framework
+      Build started 15-01-2026 08:22:08 PM.
+      
+      Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:02.45
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/4.1.0-rc3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:573 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:546 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/vk_engine/bin/"
+      - "C:/Program Files/vk_engine/sbin/"
+      - "C:/Program Files/vk_engine/"
+    searched_directories:
+      - "C:/VulkanSDK/1.4.321.1/Bin/rc.com"
+      - "C:/VulkanSDK/1.4.321.1/Bin/rc.exe"
+      - "C:/VulkanSDK/1.4.321.1/Bin/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/Neovim/bin/rc.com"
+      - "C:/Program Files/Neovim/bin/rc.exe"
+      - "C:/Program Files/Neovim/bin/rc"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/rc.com"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/rc.exe"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/premake5/rc.com"
+      - "C:/premake5/rc.exe"
+      - "C:/premake5/rc"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.com"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/rc"
+      - "C:/Program Files/PowerShell/7/rc.com"
+      - "C:/Program Files/PowerShell/7/rc.exe"
+      - "C:/Program Files/PowerShell/7/rc"
+      - "C:/ninja-win/rc.com"
+      - "C:/ninja-win/rc.exe"
+      - "C:/ninja-win/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files (x86)/IncrediBuild/rc.com"
+      - "C:/Program Files (x86)/IncrediBuild/rc.exe"
+      - "C:/Program Files (x86)/IncrediBuild/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/rc"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc.com"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc.exe"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc"
+      - "C:/MinGW/bin/rc.com"
+      - "C:/MinGW/bin/rc.exe"
+      - "C:/MinGW/bin/rc"
+      - "C:/Users/rion/.dotnet/tools/rc.com"
+      - "C:/Users/rion/.dotnet/tools/rc.exe"
+      - "C:/Users/rion/.dotnet/tools/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/rc"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/rc"
+      - "C:/Users/rion/AppData/Roaming/npm/rc.com"
+      - "C:/Users/rion/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/rion/AppData/Roaming/npm/rc"
+      - "C:/Users/rion/.bun/bin/rc.com"
+      - "C:/Users/rion/.bun/bin/rc.exe"
+      - "C:/Users/rion/.bun/bin/rc"
+      - "C:/vcpkg/rc.com"
+      - "C:/vcpkg/rc.exe"
+      - "C:/vcpkg/rc"
+      - "C:/Program Files/LLVM/bin/rc.com"
+      - "C:/Program Files/LLVM/bin/rc.exe"
+      - "C:/Program Files/LLVM/bin/rc"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files/vk_engine/bin/rc.com"
+      - "C:/Program Files/vk_engine/bin/rc.exe"
+      - "C:/Program Files/vk_engine/bin/rc"
+      - "C:/Program Files/vk_engine/sbin/rc.com"
+      - "C:/Program Files/vk_engine/sbin/rc.exe"
+      - "C:/Program Files/vk_engine/sbin/rc"
+      - "C:/Program Files/vk_engine/rc.com"
+      - "C:/Program Files/vk_engine/rc.exe"
+      - "C:/Program Files/vk_engine/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/vk_engine"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-c8dzyo"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-c8dzyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-c8dzyo'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dbbaf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 15-01-2026 08:22:11 PM.
+        
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\cmTC_dbbaf.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_dbbaf.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\Debug\\".
+          Creating directory "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_dbbaf.dir\\Debug\\\\" /Fd"cmTC_dbbaf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_dbbaf.dir\\Debug\\\\" /Fd"cmTC_dbbaf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\Debug\\cmTC_dbbaf.exe" /INCREMENTAL /ILK:"cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-c8dzyo/Debug/cmTC_dbbaf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-c8dzyo/Debug/cmTC_dbbaf.lib" /MACHINE:X64  /machine:x64 cmTC_dbbaf.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_dbbaf.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\Debug\\cmTC_dbbaf.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\Debug\\cmTC_dbbaf.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\cmTC_dbbaf.write.1u.tlog" "cmTC_dbbaf.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\unsuccessfulbuild".
+          Touching "cmTC_dbbaf.dir\\Debug\\cmTC_dbbaf.tlog\\cmTC_dbbaf.lastbuildstate".
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-c8dzyo\\cmTC_dbbaf.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.54
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35222.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-66rcr4"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-66rcr4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-66rcr4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_58318.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 15-01-2026 08:22:14 PM.
+        
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\cmTC_58318.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_58318.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\Debug\\".
+          Creating directory "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_58318.dir\\Debug\\\\" /Fd"cmTC_58318.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_58318.dir\\Debug\\\\" /Fd"cmTC_58318.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\Debug\\cmTC_58318.exe" /INCREMENTAL /ILK:"cmTC_58318.dir\\Debug\\cmTC_58318.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-66rcr4/Debug/cmTC_58318.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-66rcr4/Debug/cmTC_58318.lib" /MACHINE:X64  /machine:x64 cmTC_58318.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_58318.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\Debug\\cmTC_58318.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\Debug\\cmTC_58318.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\cmTC_58318.write.1u.tlog" "cmTC_58318.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\unsuccessfulbuild".
+          Touching "cmTC_58318.dir\\Debug\\cmTC_58318.tlog\\cmTC_58318.lastbuildstate".
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-66rcr4\\cmTC_58318.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:02.46
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35222.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ra1ats"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ra1ats"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/rion/Documents/vs code/vk_engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ra1ats'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dc60f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 15-01-2026 08:22:17 PM.
+        
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\cmTC_dc60f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_dc60f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\Debug\\".
+          Creating directory "cmTC_dc60f.dir\\Debug\\cmTC_dc60f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_dc60f.dir\\Debug\\cmTC_dc60f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dc60f.dir\\Debug\\cmTC_dc60f.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_dc60f.dir\\Debug\\\\" /Fd"cmTC_dc60f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_dc60f.dir\\Debug\\\\" /Fd"cmTC_dc60f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\src.c"
+          src.c
+        C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\cmTC_dc60f.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\cmTC_dc60f.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\cmTC_dc60f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ra1ats\\cmTC_dc60f.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.46
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mgyazf"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mgyazf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/rion/Documents/vs code/vk_engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mgyazf'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8a249.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 15-01-2026 08:22:18 PM.
+        
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\cmTC_8a249.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_8a249.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\Debug\\".
+          Creating directory "cmTC_8a249.dir\\Debug\\cmTC_8a249.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_8a249.dir\\Debug\\cmTC_8a249.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_8a249.dir\\Debug\\cmTC_8a249.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8a249.dir\\Debug\\\\" /Fd"cmTC_8a249.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_8a249.dir\\Debug\\\\" /Fd"cmTC_8a249.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\Debug\\cmTC_8a249.exe" /INCREMENTAL /ILK:"cmTC_8a249.dir\\Debug\\cmTC_8a249.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mgyazf/Debug/cmTC_8a249.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mgyazf/Debug/cmTC_8a249.lib" /MACHINE:X64  /machine:x64 cmTC_8a249.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\cmTC_8a249.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\cmTC_8a249.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\cmTC_8a249.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mgyazf\\cmTC_8a249.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.53
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-8e9uke"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-8e9uke"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/rion/Documents/vs code/vk_engine/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-8e9uke'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9dac5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.14.23+b0019275e for .NET Framework
+        Build started 15-01-2026 08:22:19 PM.
+        
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\cmTC_9dac5.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9dac5.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\Debug\\".
+          Creating directory "cmTC_9dac5.dir\\Debug\\cmTC_9dac5.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9dac5.dir\\Debug\\cmTC_9dac5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9dac5.dir\\Debug\\cmTC_9dac5.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9dac5.dir\\Debug\\\\" /Fd"cmTC_9dac5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35222 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9dac5.dir\\Debug\\\\" /Fd"cmTC_9dac5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\Debug\\cmTC_9dac5.exe" /INCREMENTAL /ILK:"cmTC_9dac5.dir\\Debug\\cmTC_9dac5.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-8e9uke/Debug/cmTC_9dac5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-8e9uke/Debug/cmTC_9dac5.lib" /MACHINE:X64  /machine:x64 cmTC_9dac5.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\cmTC_9dac5.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\cmTC_9dac5.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\cmTC_9dac5.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8e9uke\\cmTC_9dac5.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.55
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:387 (find_path)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "path"
+    variable: "Vulkan_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan/vulkan.h"
+    candidate_directories:
+      - "C:/VulkanSDK/1.4.321.1/include/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+      - "C:/Program Files/include/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/include/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/include/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/vk_engine/include/"
+      - "C:/Program Files/vk_engine/"
+    found: "C:/VulkanSDK/1.4.321.1/include/"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/vk_engine"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:394 (find_library)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "library"
+    variable: "Vulkan_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan-1"
+    candidate_directories:
+      - "C:/VulkanSDK/1.4.321.1/lib/"
+      - "C:/VulkanSDK/1.4.321.1/bin/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/vk_engine/lib/"
+      - "C:/Program Files/vk_engine/"
+      - "C:/Program Files/vk_engine/bin/"
+      - "/bin/"
+    found: "C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files/vk_engine/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:402 (find_program)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslc"
+    candidate_directories:
+      - "C:/VulkanSDK/1.4.321.1/bin/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/vk_engine/bin/"
+      - "C:/Program Files/vk_engine/sbin/"
+      - "C:/Program Files/vk_engine/"
+    searched_directories:
+      - "C:/VulkanSDK/1.4.321.1/bin/glslc.com"
+    found: "C:/VulkanSDK/1.4.321.1/Bin/glslc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/vk_engine"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:410 (find_program)"
+      - "CMakeLists.txt:26 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "C:/VulkanSDK/1.4.321.1/bin/"
+      - "C:/VulkanSDK/1.4.321.1/Bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/Users/rion/AppData/Local/Muse Hub/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/premake5/"
+      - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/PowerShell/7/"
+      - "C:/ninja-win/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files (x86)/IncrediBuild/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/rion/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/rion/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
+      - "C:/MinGW/bin/"
+      - "C:/Users/rion/.dotnet/tools/"
+      - "C:/Users/rion/AppData/Local/Programs/Zed/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/rion/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0-full_build/bin/"
+      - "C:/Users/rion/AppData/Roaming/npm/"
+      - "C:/Users/rion/.bun/bin/"
+      - "C:/vcpkg/"
+      - "C:/Program Files/LLVM/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/Ollama/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/vk_engine/bin/"
+      - "C:/Program Files/vk_engine/sbin/"
+      - "C:/Program Files/vk_engine/"
+    searched_directories:
+      - "C:/VulkanSDK/1.4.321.1/bin/glslangValidator.com"
+    found: "C:/VulkanSDK/1.4.321.1/Bin/glslangValidator.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\premake5"
+        - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
+        - "C:\\ninja-win"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files (x86)\\IncrediBuild"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\rion\\AppData\\Local\\Muse Hub\\lib"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Program Files\\JetBrains\\WebStorm 2025.1.4.1\\bin"
+        - "C:\\MinGW\\bin"
+        - "C:\\Users\\rion\\.dotnet\\tools"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Zed\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0-full_build\\bin"
+        - "C:\\Users\\rion\\AppData\\Roaming\\npm"
+        - "C:\\Users\\rion\\.bun\\bin"
+        - "C:\\vcpkg"
+        - "C:\\Program Files\\LLVM\\bin\\"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\Ollama"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/vk_engine"
+...

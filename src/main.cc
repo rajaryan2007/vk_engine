@@ -5,11 +5,11 @@
 
 
 int main() {
-	Application app;
+	Application app1;
 
 	try
 	{
-		app.run();
+		app1.run();
 	}
 	catch (const std::exception& e)
 	{
