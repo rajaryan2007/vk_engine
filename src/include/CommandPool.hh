@@ -3,7 +3,8 @@
 #else
 import vulkan_hpp;
 #endif
-
+#include <optional>
+#include <vector>
 class LogicalDevice;
 class Swapchain;
 class GrapicPileline;
@@ -22,10 +23,10 @@ public:
 		vk::PipelineStageFlags2 src_stage_mask,
 		vk::PipelineStageFlags2 dst_stage_mask);
 	void recordCommandBuffer(GrapicPileline& grapic, uint32_t imageIndex, Swapchain& swapchian);
-	const vk::raii::CommandBuffer&  GetCommandBuffer() const {return m_commandBuffer;}
+	const vk::raii::CommandBuffer&  GetCommandBuffer() const {return m_commandBuffer[0];}
 private:  
-vk::raii::CommandPool    m_commandPool = nullptr;
-vk::raii::CommandBuffer  m_commandBuffer;
+	std::optional<vk::raii::CommandPool> m_commandPool;
+    std::vector<vk::raii::CommandBuffer>  m_commandBuffer;
 };
 
 

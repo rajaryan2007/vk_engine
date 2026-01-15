@@ -8,7 +8,9 @@ LogicalDevice::LogicalDevice()
         vk::KHRSwapchainExtensionName,
         vk::KHRSpirv14ExtensionName,
         vk::KHRSynchronization2ExtensionName,
-        vk::KHRCreateRenderpass2ExtensionName }
+        vk::KHRCreateRenderpass2ExtensionName,
+        vk::KHRShaderFloatControlsExtensionName,
+        vk::KHRDynamicRenderingExtensionName }
 {
    
 }
@@ -35,6 +37,7 @@ void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice)
 	auto& featuresExt = featureChain.get<vk::PhysicalDeviceExtendedDynamicStateFeaturesEXT>();
 
 	features13.dynamicRendering = VK_TRUE;
+	features13.synchronization2 = VK_TRUE;
 	featuresExt.extendedDynamicState = VK_TRUE;
 
 	float queuePriority = 0.5f;

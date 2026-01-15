@@ -30,9 +30,9 @@ public:
 	void createImageViews(LogicalDevice& device);
 	const vk::Extent2D& GetExtent() const { return swapChainExtent; }
 	const vk::SurfaceFormatKHR GetSurfaceFormat() const { return swapChainSurfaceFormat; };
-	std::vector<vk::Image>& GetImage()  { return swapChainImages; }
+	const std::vector<vk::Image>& GetImage() const { return swapChainImages; }
 	const vk::raii::SwapchainKHR& getSwapChain() { return swapChain; }
-	const std::vector<vk::raii::ImageView> const GetImageView(){ return swapChainImageViews; }
+	const std::vector<vk::raii::ImageView>& const GetImageView(){ return swapChainImageViews; }
 private:
 	vk::raii::SwapchainKHR           swapChain = nullptr;
 	std::vector<vk::Image>           swapChainImages;

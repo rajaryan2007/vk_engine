@@ -14,7 +14,8 @@ Application::Application()
 	: m_window(nullptr),
 	presentCompleteSemaphore(nullptr),
 	renderFinishedSemaphore(nullptr),
-	drawFence(nullptr)
+	drawFence(nullptr),
+	m_CommandPool(std::make_unique<CommandPool>())
 {
 	// If VulkanInstance, PhysicalDevice, etc., have default 
 	// constructors, this will now compile.
@@ -41,8 +42,9 @@ void Application::mainLoop(){
 	while (!glfwWindowShouldClose(m_window))
 	{
 		glfwPollEvents();
-		
+		drawFrame();
 	}
+	m_logicalDevice.getLogicalDevice().waitIdle();
 }
 
 void Application::cleanup() {
@@ -66,7 +68,7 @@ void Application::initWindow() {
 		throw std::runtime_error("Failed to create GLFW window");
 	}
 }
-void Application::drawFrame( )
+void Application::drawFrame()
 {
 	const auto& queue = m_logicalDevice.GetQueue();
 	const auto& device = m_logicalDevice.getLogicalDevice();
