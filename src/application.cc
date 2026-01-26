@@ -12,13 +12,14 @@ void Application::run() {
 }
 Application::Application()
 	: m_window(nullptr),
-	presentCompleteSemaphore(nullptr),
-	renderFinishedSemaphore(nullptr),
-	drawFence(nullptr),
+	presentCompleteSemaphores(),
+	renderFinishedSemaphores(),
+	inFlightFences(),
+	
 	m_CommandPool(std::make_unique<CommandPool>())
 {
-	// If VulkanInstance, PhysicalDevice, etc., have default 
-	// constructors, this will now compile.
+	
+
 }
 void Application::initVulkan() {
 	
@@ -72,24 +73,25 @@ void Application::drawFrame()
 {
 	const auto& queue = m_logicalDevice.GetQueue();
 	const auto& device = m_logicalDevice.getLogicalDevice();
+	auto MAX_FRAMES_IN_FLIGHT = m_CommandPool->GetMaxFramesInFlight();
 	queue.waitIdle();
 	const auto& swapChain = m_swapchain.getSwapChain();
-	auto [result, imageIndex] = swapChain.acquireNextImage(UINT64_MAX, *presentCompleteSemaphore, nullptr);
+	auto [result, imageIndex] = swapChain.acquireNextImage(UINT64_MAX, *presentCompleteSemaphores[frameIndex], nullptr);
 	m_CommandPool->recordCommandBuffer(m_graphicPipeline,imageIndex, m_swapchain);
-	device.resetFences(*drawFence);
+	device.resetFences(*inFlightFences[frameIndex]);
 	vk::PipelineStageFlags waitDestinationStageMask(vk::PipelineStageFlagBits::eColorAttachmentOutput);
 	vk::SubmitInfo submitInfo{};
 	submitInfo.waitSemaphoreCount = 1;
-	submitInfo.pWaitSemaphores = &*presentCompleteSemaphore;
+	submitInfo.pWaitSemaphores = &*presentCompleteSemaphores[frameIndex];
 	submitInfo.pWaitDstStageMask = &waitDestinationStageMask;
 	submitInfo.commandBufferCount = 1;
 	
 	submitInfo.pCommandBuffers = &*m_CommandPool->GetCommandBuffer();;
 	submitInfo.signalSemaphoreCount = 1;
-	submitInfo.pSignalSemaphores = &*renderFinishedSemaphore;
+	submitInfo.pSignalSemaphores = &*renderFinishedSemaphores[imageIndex];
 
-	queue.submit(submitInfo, *drawFence);
-	result = device.waitForFences(*drawFence, vk::True, UINT64_MAX);
+	queue.submit(submitInfo, *inFlightFences[frameIndex]);
+	result = device.waitForFences(*inFlightFences[frameIndex], vk::True, UINT64_MAX);
 	if (result != vk::Result::eSuccess)
 	{
 		throw std::runtime_error("failed to wait for fence!");
@@ -97,7 +99,7 @@ void Application::drawFrame()
 
 	vk::PresentInfoKHR presentInfoKHR{};
 	presentInfoKHR.waitSemaphoreCount = 1;
-	presentInfoKHR.pWaitSemaphores = &*renderFinishedSemaphore;
+	presentInfoKHR.pWaitSemaphores = &*renderFinishedSemaphores[imageIndex];
 	presentInfoKHR.swapchainCount = 1;
 	presentInfoKHR.pSwapchains = &*swapChain;
 	presentInfoKHR.pImageIndices = &imageIndex;
@@ -114,14 +116,27 @@ void Application::drawFrame()
 	default:
 		break;        // an unexpected result is returned!
 	}
-
+	frameIndex = (frameIndex + 1) % MAX_FRAMES_IN_FLIGHT;
 }
 
 void Application::createSyncObjects( )
 {   
+	auto MAX_FRAMES_IN_FLIGHT = m_CommandPool->GetMaxFramesInFlight();
 	const auto& device = m_logicalDevice.getLogicalDevice();
-	presentCompleteSemaphore = vk::raii::Semaphore(device, vk::SemaphoreCreateInfo());
-	renderFinishedSemaphore = vk::raii::Semaphore(device, vk::SemaphoreCreateInfo());
-	drawFence = vk::raii::Fence(device, { vk::FenceCreateFlagBits::eSignaled });
+	auto& swapChainImages = m_swapchain.GetImage();
+	assert(presentCompleteSemaphores.empty());
+	assert(renderFinishedSemaphores.empty());
+	assert(inFlightFences.empty());
+	for (size_t i = 0; i < swapChainImages.size(); i++)
+	{
+		renderFinishedSemaphores.emplace_back(device, vk::SemaphoreCreateInfo());
+	}
+
+	for (size_t i = 0; i < MAX_FRAMES_IN_FLIGHT; i++)
+	{
+		presentCompleteSemaphores.emplace_back(device, vk::SemaphoreCreateInfo());
+		inFlightFences.emplace_back(device, vk::FenceCreateInfo{ vk::FenceCreateFlagBits::eSignaled });
+	}
+	
 
 }

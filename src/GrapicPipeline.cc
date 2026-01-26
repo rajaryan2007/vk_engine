@@ -20,7 +20,7 @@ GrapicPileline::~GrapicPileline()
 void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, vk::SurfaceFormatKHR swapChainSurfaceFormat)
 {
 	LOG("GrapicPipeline Init")
-	vk::raii::ShaderModule shaderModule = createShaderModule(readFile("shader/slang.spv"),Device);
+	vk::raii::ShaderModule shaderModule = createShaderModule(readFile("slang.spv"),Device);
 	vk::PipelineShaderStageCreateInfo vertShaderStageInfo{};
 	vertShaderStageInfo.stage = vk::ShaderStageFlagBits::eVertex;
 	vertShaderStageInfo.module = shaderModule;

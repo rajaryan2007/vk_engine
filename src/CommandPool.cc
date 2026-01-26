@@ -9,6 +9,7 @@ void CommandPool::Init(LogicalDevice& Device)
 	vk::CommandPoolCreateInfo poolInfo{};
 	poolInfo.flags = vk::CommandPoolCreateFlagBits::eResetCommandBuffer;
 	poolInfo.queueFamilyIndex = queueIndex;
+	
 
 	// Use .emplace() to construct the object in-place
 	m_commandPool.emplace(Device.getLogicalDevice(), poolInfo);
@@ -25,7 +26,7 @@ void CommandPool::createCommandBuffer(LogicalDevice& Device)
 	// 2. Use the * to get the inner handle
 	allocInfo.commandPool = *m_commandPool;
 	allocInfo.level = vk::CommandBufferLevel::ePrimary;
-	allocInfo.commandBufferCount = 1;
+	allocInfo.commandBufferCount = MAX_FRAMES_IN_FLIGHT;
 	// Access the first element in the returned collection
 	m_commandBuffer = vk::raii::CommandBuffers(Device.getLogicalDevice(), allocInfo);
 }

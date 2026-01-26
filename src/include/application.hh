@@ -8,6 +8,10 @@
 #include "GrapicPipeline.hh"
 #include "CommandPool.hh"
 #include <memory>
+#include <utility>
+
+
+
 class Application {
 public:
 	Application();
@@ -22,6 +26,7 @@ public:
 	
 private:
 	
+	
 	GLFWwindow* m_window;
 	VulkanInstance m_instance;
 	PhysicalDevice m_physicalDevice;
@@ -29,7 +34,9 @@ private:
 	Swapchain m_swapchain;
 	GrapicPileline m_graphicPipeline;
 	std::unique_ptr<CommandPool> m_CommandPool;
-	vk::raii::Semaphore presentCompleteSemaphore = nullptr;
-	vk::raii::Semaphore renderFinishedSemaphore = nullptr;
-	vk::raii::Fence     drawFence = nullptr;
+	std::vector<vk::raii::Semaphore> presentCompleteSemaphores;
+	std::vector<vk::raii::Semaphore> renderFinishedSemaphores;
+	
+	std::vector<vk::raii::Fence> inFlightFences;
+	uint32_t frameIndex = 0;
 };

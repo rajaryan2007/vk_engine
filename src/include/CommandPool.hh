@@ -24,10 +24,13 @@ public:
 		vk::PipelineStageFlags2 dst_stage_mask);
 	void recordCommandBuffer(GrapicPileline& grapic, uint32_t imageIndex, Swapchain& swapchian);
 	const vk::raii::CommandBuffer&  GetCommandBuffer() const {return m_commandBuffer[0];}
+	constexpr int GetMaxFramesInFlight() const { return MAX_FRAMES_IN_FLIGHT; }
 private:  
+	static constexpr int MAX_FRAMES_IN_FLIGHT = 2;
 	std::optional<vk::raii::CommandPool> m_commandPool;
     std::vector<vk::raii::CommandBuffer>  m_commandBuffer;
 };
+
 
 
 
