@@ -115,5 +115,11 @@ void Swapchain::createImageViews(LogicalDevice& device)
 	}
 }
 
+void Swapchain::cleanupSwapChain()
+{
+	swapChainImageViews.clear();
+	swapChain = nullptr;
+}
+
 
 

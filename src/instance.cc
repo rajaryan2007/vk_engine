@@ -77,7 +77,7 @@ void VulkanInstance::createInstance()
 	createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
 	createInfo.pApplicationInfo = &appInfo;
 	createInfo.enabledLayerCount = static_cast<uint32_t>(requiredLayers.size()),
-		createInfo.ppEnabledLayerNames = requiredLayers.data();
+	createInfo.ppEnabledLayerNames = requiredLayers.data();
 	createInfo.enabledExtensionCount = static_cast<uint32_t>(requiredExtensions.size());
 	createInfo.ppEnabledExtensionNames = requiredExtensions.empty() ? nullptr : requiredExtensions.data();;
 	if (enableValidationLayers) {

@@ -23,7 +23,8 @@ public:
 	void cleanup();
 	void drawFrame();
     void createSyncObjects( );
-	
+	void recreateSwapChain();
+	static void framebufferResizeCallback(GLFWwindow* window, int width, int height);
 private:
 	
 	
