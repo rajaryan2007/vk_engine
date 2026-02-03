@@ -3,6 +3,8 @@
 #include <vector>
 #include <stdexcept>
 #include <fstream>
+#include <glm/glm.hpp>
+
 #if defined(__INTELLISENSE__) || !defined(USE_CPP20_MODULES)
 #	include <vulkan/vulkan_raii.hpp>
 #else
@@ -26,6 +28,28 @@ static inline std::vector<char> readFile(const std::string& filename)
 	file.close();
 	return buffer;
 }
+
+struct Vertex
+{
+	glm::vec2 pos;
+	glm::vec3 color;
+
+	static vk::VertexInputBindingDescription getBindingDescription()
+	{
+		return { 0, sizeof(Vertex), vk::VertexInputRate::eVertex };
+	}
+
+	static std::array<vk::VertexInputAttributeDescription, 2> getAttributeDescriptions()
+	{
+		return {
+			vk::VertexInputAttributeDescription(0, 0, vk::Format::eR32G32Sfloat, offsetof(Vertex, pos)),
+			vk::VertexInputAttributeDescription(1, 0, vk::Format::eR32G32B32Sfloat, offsetof(Vertex, color)) };
+	}
+};
+
+
+
+
 
 
 [[nodiscard]] vk::raii::ShaderModule createShaderModule(const std::vector<char>& code,LogicalDevice& logical);

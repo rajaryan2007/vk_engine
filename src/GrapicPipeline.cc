@@ -33,7 +33,15 @@ void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, v
 
 	vk::PipelineShaderStageCreateInfo shaderStages[] = { vertShaderStageInfo, fragShaderStageInfo };
     
+	auto bindingDescription    = Vertex::getBindingDescription();
+	auto attributeDescriptions = Vertex::getAttributeDescriptions();
+
+
 	vk::PipelineVertexInputStateCreateInfo   vertexInputInfo;
+	vertexInputInfo.vertexBindingDescriptionCount = 1;
+	vertexInputInfo.pVertexBindingDescriptions = &bindingDescription;
+	vertexInputInfo.vertexAttributeDescriptionCount = static_cast<uint32_t>(attributeDescriptions.size());
+	vertexInputInfo.pVertexAttributeDescriptions = attributeDescriptions.data();
 
 	std::vector dynamicStates = {
 	   vk::DynamicState::eViewport,
