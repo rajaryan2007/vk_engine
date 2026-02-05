@@ -29,6 +29,8 @@ static inline std::vector<char> readFile(const std::string& filename)
 	return buffer;
 }
 
+
+
 struct Vertex
 {
 	glm::vec2 pos;
@@ -46,7 +48,6 @@ struct Vertex
 			vk::VertexInputAttributeDescription(1, 0, vk::Format::eR32G32B32Sfloat, offsetof(Vertex, color)) };
 	}
 };
-
 
 
 

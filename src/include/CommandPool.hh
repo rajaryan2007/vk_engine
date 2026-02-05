@@ -5,6 +5,8 @@ import vulkan_hpp;
 #endif
 #include <optional>
 #include <vector>
+
+
 class LogicalDevice;
 class Swapchain;
 class GrapicPileline;
@@ -14,6 +16,7 @@ public:
 	void Init(LogicalDevice& Device);
 	void createCommandBuffer(LogicalDevice& Device);
 	void transition_image_layout(
+		auto& cmd,
 		Swapchain& swapchian,
 		uint32_t                imageIndex,
 		vk::ImageLayout         old_layout,
@@ -22,10 +25,13 @@ public:
 		vk::AccessFlags2        dst_access_mask,
 		vk::PipelineStageFlags2 src_stage_mask,
 		vk::PipelineStageFlags2 dst_stage_mask);
-	void recordCommandBuffer(GrapicPileline& grapic, uint32_t imageIndex, Swapchain& swapchian);
+	void recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic, uint32_t imageIndex, Swapchain& swapchian);
 	const vk::raii::CommandBuffer&  GetCommandBuffer() const {return m_commandBuffer[0];}
 	constexpr int GetMaxFramesInFlight() const { return MAX_FRAMES_IN_FLIGHT; }
+    uint32_t& GetFrameIndex() { return frameIndex; }
 private:  
+	
+	uint32_t frameIndex = 0;
 	static constexpr int MAX_FRAMES_IN_FLIGHT = 2;
 	std::optional<vk::raii::CommandPool> m_commandPool;
     std::vector<vk::raii::CommandBuffer>  m_commandBuffer;

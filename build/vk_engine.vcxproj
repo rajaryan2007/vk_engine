@@ -377,6 +377,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\physicalDevice.cc" />
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\swapchain.cc" />
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\utils.cc" />
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\vertexBuffer.cc" />
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\CommandPool.hh" />
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\GrapicPipeline.hh" />
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\LogicalDevice.hh" />
@@ -385,6 +386,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\physicalDevice.hh" />
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\swapchain.hh" />
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\utils.hh" />
+    <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\vertexBuffer.hh" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

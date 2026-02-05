@@ -28,6 +28,9 @@
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\utils.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\vertexBuffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\CommandPool.hh">
@@ -52,6 +55,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\utils.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\vertexBuffer.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

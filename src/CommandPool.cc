@@ -2,6 +2,7 @@
 #include "LogicalDevice.hh"
 #include "swapchain.hh"
 #include "GrapicPipeline.hh"
+#include "utils.hh"
 
 void CommandPool::Init(LogicalDevice& Device)
 {
@@ -31,8 +32,9 @@ void CommandPool::createCommandBuffer(LogicalDevice& Device)
 	m_commandBuffer = vk::raii::CommandBuffers(Device.getLogicalDevice(), allocInfo);
 }
 
-void CommandPool::transition_image_layout(Swapchain& swapchain,uint32_t imageIndex, vk::ImageLayout old_layout, vk::ImageLayout new_layout, vk::AccessFlags2 src_access_mask, vk::AccessFlags2 dst_access_mask, vk::PipelineStageFlags2 src_stage_mask, vk::PipelineStageFlags2 dst_stage_mask)
+void CommandPool::transition_image_layout(auto& cmd,Swapchain& swapchain,uint32_t imageIndex, vk::ImageLayout old_layout, vk::ImageLayout new_layout, vk::AccessFlags2 src_access_mask, vk::AccessFlags2 dst_access_mask, vk::PipelineStageFlags2 src_stage_mask, vk::PipelineStageFlags2 dst_stage_mask)
 {   
+	
 	auto& swapChainImages = swapchain.GetImage();
 	vk::ImageMemoryBarrier2 barrier = {};
 	barrier.srcStageMask = src_stage_mask;
@@ -51,24 +53,31 @@ void CommandPool::transition_image_layout(Swapchain& swapchain,uint32_t imageInd
 	dependency_info.imageMemoryBarrierCount = 1;
 	dependency_info.pImageMemoryBarriers = &barrier;
 
-	m_commandBuffer[0].pipelineBarrier2(dependency_info);
+	cmd.pipelineBarrier2(dependency_info);
 
 }
 
-void CommandPool::recordCommandBuffer(GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian)
-{
-	m_commandBuffer[0].begin({});
+void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian)
+{ 
+	auto& cmd = m_commandBuffer[frameIndex];
+    
+
+	cmd.begin({});
+
 
 	transition_image_layout(
+		cmd,
 		swapchian,
-		imageIndex, 
-		vk::ImageLayout::eUndefined, 
-		vk::ImageLayout::eColorAttachmentOptimal, 
-		{}, 
-		vk::AccessFlagBits2::eColorAttachmentWrite, 
-		vk::PipelineStageFlagBits2::eColorAttachmentOutput, 
+		imageIndex,
+		vk::ImageLayout::eUndefined,
+		vk::ImageLayout::eColorAttachmentOptimal,
+		{},
+		vk::AccessFlagBits2::eColorAttachmentWrite,
+		vk::PipelineStageFlagBits2::eColorAttachmentOutput,
 		vk::PipelineStageFlagBits2::eColorAttachmentOutput
 	);
+
+	
     vk::ClearValue              clearColor = vk::ClearColorValue(0.0f, 0.0f, 0.0f, 1.0f);
     
 	const auto& swapChainImageView= swapchian.GetImageView();
@@ -91,21 +100,35 @@ void CommandPool::recordCommandBuffer(GrapicPileline& grapic,uint32_t imageIndex
 	renderingInfo.colorAttachmentCount = 1,
 		renderingInfo.pColorAttachments = &attachmentInfo;
 
-	m_commandBuffer[0].beginRendering(renderingInfo);
-	m_commandBuffer[0].bindPipeline(vk::PipelineBindPoint::eGraphics, grapic.GetPipeline());
-	m_commandBuffer[0].setViewport(0, vk::Viewport(0.0f, 0.0f, static_cast<float>(extent.width), static_cast<float>(extent.height), 0.0f, 1.0f));
-	m_commandBuffer[0].setScissor(0, vk::Rect2D(vk::Offset2D(0, 0), extent));
-	m_commandBuffer[0].draw(3, 1, 0, 0);
-	m_commandBuffer[0].endRendering();
+	cmd.beginRendering(renderingInfo);
+	cmd.bindPipeline(vk::PipelineBindPoint::eGraphics, grapic.GetPipeline());
+	cmd.setViewport(0, vk::Viewport(0, 0, (float)extent.width, (float)extent.height, 0, 1));
+	cmd.setScissor(0, vk::Rect2D({ 0,0 }, extent));
+	
+	
+
+	cmd.bindVertexBuffers(
+		0,
+		*vertexBuffer,
+		std::array<vk::DeviceSize, 1>{ 0 }
+	);
+
+	cmd.draw(3, 1, 0, 0);
+	cmd.endRendering();
+
+	
+
 	transition_image_layout(
-		swapchian
-		,imageIndex,
+		cmd,
+		swapchian,
+		imageIndex,
 		vk::ImageLayout::eColorAttachmentOptimal,
 		vk::ImageLayout::ePresentSrcKHR,
-		vk::AccessFlagBits2::eColorAttachmentWrite,                // srcAccessMask
-		{},                                                        // dstAccessMask
-		vk::PipelineStageFlagBits2::eColorAttachmentOutput,        // srcStage
-		vk::PipelineStageFlagBits2::eBottomOfPipe                  // dstStage
+		vk::AccessFlagBits2::eColorAttachmentWrite,
+		{},
+		vk::PipelineStageFlagBits2::eColorAttachmentOutput,
+		vk::PipelineStageFlagBits2::eNone
 	);
-	m_commandBuffer[0].end();
+
+	cmd.end();
 }

@@ -26,6 +26,5 @@ private:
 		vk::KHRCreateRenderpass2ExtensionName,
 		vk::KHRShaderFloatControlsExtensionName,
 		vk::KHRDynamicRenderingExtensionName };
-
 };
 

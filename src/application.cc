@@ -33,7 +33,9 @@ void Application::initVulkan() {
 	m_swapchain.createSwapChain(m_physicalDevice, m_logicalDevice, *m_window);
 	m_swapchain.createImageViews(m_logicalDevice);
 	m_graphicPipeline.Init(m_logicalDevice,m_swapchain.GetExtent(),m_swapchain.GetSurfaceFormat());
+	
 	m_CommandPool->Init(m_logicalDevice);
+	m_vertexBuffer.createVertexBuffer(m_physicalDevice, m_logicalDevice, vertices);
 	m_CommandPool->createCommandBuffer(m_logicalDevice);
 	createSyncObjects();
 }
@@ -120,7 +122,9 @@ void Application::drawFrame()
 		assert(result == vk::Result::eTimeout || result == vk::Result::eNotReady);
 		throw std::runtime_error("failed to acquire swap chain image!");
 	}
-	m_CommandPool->recordCommandBuffer(m_graphicPipeline,imageIndex, m_swapchain);
+
+    auto& vertexBuffer = m_vertexBuffer.get();
+	m_CommandPool->recordCommandBuffer(vertexBuffer,m_graphicPipeline,imageIndex, m_swapchain);
 	
 	device.resetFences(*inFlightFences[frameIndex]);
 	
