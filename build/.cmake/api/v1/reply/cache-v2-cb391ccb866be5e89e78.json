@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib][C:/VulkanSDK/1.4.321.1/include][found components: glslc glslangValidator ][v1.4.321()]"
+			"value" : "[C:/VulkanSDK/1.4.341.1/Lib/vulkan-1.lib][C:/VulkanSDK/1.4.341.1/include][found components: glslc glslangValidator ][v1.4.341()]"
 		},
 		{
 			"name" : "GLFW_BINARY_DIR",
@@ -1599,7 +1599,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/VulkanSDK/1.4.321.1/Bin/glslangValidator.exe"
+			"value" : "C:/VulkanSDK/1.4.341.1/Bin/glslangValidator.exe"
 		},
 		{
 			"name" : "Vulkan_GLSLC_EXECUTABLE",
@@ -1615,7 +1615,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/VulkanSDK/1.4.321.1/Bin/glslc.exe"
+			"value" : "C:/VulkanSDK/1.4.341.1/Bin/glslc.exe"
 		},
 		{
 			"name" : "Vulkan_INCLUDE_DIR",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/VulkanSDK/1.4.321.1/include"
+			"value" : "C:/VulkanSDK/1.4.341.1/include"
 		},
 		{
 			"name" : "Vulkan_LIBRARY",
@@ -1647,7 +1647,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/VulkanSDK/1.4.321.1/Lib/vulkan-1.lib"
+			"value" : "C:/VulkanSDK/1.4.341.1/Lib/vulkan-1.lib"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",

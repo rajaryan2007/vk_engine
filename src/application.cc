@@ -16,7 +16,7 @@ Application::Application()
 	renderFinishedSemaphores(),
 	inFlightFences(),
 	
-	m_CommandPool(std::make_unique<CommandPool>())
+	m_CommandPool(std::make_shared<CommandPool>())
 {
 	
 
@@ -35,7 +35,9 @@ void Application::initVulkan() {
 	m_graphicPipeline.Init(m_logicalDevice,m_swapchain.GetExtent(),m_swapchain.GetSurfaceFormat());
 	
 	m_CommandPool->Init(m_logicalDevice);
-	m_vertexBuffer.createVertexBuffer(m_physicalDevice, m_logicalDevice, vertices);
+	const auto& commmandPool = m_CommandPool->GetCommandPool();
+	m_vertexBuffer.createVertexBuffer(commmandPool,m_physicalDevice, m_logicalDevice, vertices);
+	m_vertexBuffer.createIndexBuffer(commmandPool, m_physicalDevice, m_logicalDevice);
 	m_CommandPool->createCommandBuffer(m_logicalDevice);
 	createSyncObjects();
 }
@@ -124,7 +126,9 @@ void Application::drawFrame()
 	}
 
     auto& vertexBuffer = m_vertexBuffer.get();
-	m_CommandPool->recordCommandBuffer(vertexBuffer,m_graphicPipeline,imageIndex, m_swapchain);
+	const auto& IndexBuffer = m_vertexBuffer.getIndexBuffer();	
+	auto& indices = m_vertexBuffer.getIndices();
+	m_CommandPool->recordCommandBuffer(vertexBuffer,m_graphicPipeline,imageIndex, m_swapchain,IndexBuffer,indices);
 	
 	device.resetFences(*inFlightFences[frameIndex]);
 	

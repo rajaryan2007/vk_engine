@@ -31,9 +31,10 @@ public:
 	
 private:
 	const std::vector<Vertex> vertices = {
-		{{0.0f, -0.5f}, {1.0f, 1.0f, 1.0f}},
-		{{0.5f, 0.5f}, {0.0f, 1.0f, 0.0f}},
-		{{-0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}}
+	{{-0.5f, -0.5f}, {1.0f, 0.0f, 0.0f}},
+	{{0.5f, -0.5f}, {0.0f, 1.0f, 0.0f}},
+	{{0.5f, 0.5f}, {0.0f, 0.0f, 1.0f}},
+	{{-0.5f, 0.5f}, {1.0f, 1.0f, 1.0f}}
 	};
 	GLFWwindow* m_window;
 	VulkanInstance m_instance;
@@ -42,7 +43,7 @@ private:
 	Swapchain m_swapchain;
 	GrapicPileline m_graphicPipeline;
 	VertexBuffer m_vertexBuffer;
-	std::unique_ptr<CommandPool> m_CommandPool;
+	std::shared_ptr<CommandPool> m_CommandPool;
 	uint32_t& frameIndex = m_CommandPool->GetFrameIndex();
 	std::vector<vk::raii::Semaphore> presentCompleteSemaphores;
 	std::vector<vk::raii::Semaphore> renderFinishedSemaphores;

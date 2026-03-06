@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/vk_engine.exe"
+			"path" : "Debug/vk_engine.exe"
 		},
 		{
-			"path" : "MinSizeRel/vk_engine.pdb"
+			"path" : "Debug/vk_engine.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 29,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 35,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 33,
+				"line" : 34,
 				"parent" : 0
 			}
 		]
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG -std:c++latest"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++latest"
 				}
 			],
 			"includes" : 
@@ -68,7 +68,7 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/VulkanSDK/1.4.321.1/include"
+					"path" : "C:/VulkanSDK/1.4.341.1/include"
 				}
 			],
 			"language" : "CXX",
@@ -111,11 +111,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
 				"role" : "flags"
 			},
 			{
@@ -124,12 +124,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "external\\glfw\\src\\MinSizeRel\\glfw3.lib",
+				"fragment" : "external\\glfw\\src\\Debug\\glfw3.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\VulkanSDK\\1.4.321.1\\Lib\\vulkan-1.lib",
+				"fragment" : "C:\\VulkanSDK\\1.4.341.1\\Lib\\vulkan-1.lib",
 				"role" : "libraries"
 			},
 			{

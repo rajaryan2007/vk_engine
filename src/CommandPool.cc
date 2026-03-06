@@ -57,7 +57,7 @@ void CommandPool::transition_image_layout(auto& cmd,Swapchain& swapchain,uint32_
 
 }
 
-void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian)
+void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian,const vk::raii::Buffer& IndexBuffer, std::vector<uint16_t> indices)
 { 
 	auto& cmd = m_commandBuffer[frameIndex];
     
@@ -78,7 +78,7 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 	);
 
 	
-    vk::ClearValue              clearColor = vk::ClearColorValue(0.0f, 0.0f, 0.0f, 1.0f);
+    vk::ClearValue  clearColor = vk::ClearColorValue(0.0f, 0.0f, 0.0f, 1.0f);
     
 	const auto& swapChainImageView= swapchian.GetImageView();
 	vk::RenderingAttachmentInfo attachmentInfo{};
@@ -98,7 +98,7 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 	renderingInfo.renderArea.extent = extent;
 	renderingInfo.layerCount = 1;
 	renderingInfo.colorAttachmentCount = 1,
-		renderingInfo.pColorAttachments = &attachmentInfo;
+	renderingInfo.pColorAttachments = &attachmentInfo;
 
 	cmd.beginRendering(renderingInfo);
 	cmd.bindPipeline(vk::PipelineBindPoint::eGraphics, grapic.GetPipeline());
@@ -112,8 +112,13 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 		*vertexBuffer,
 		std::array<vk::DeviceSize, 1>{ 0 }
 	);
+	cmd.bindIndexBuffer(
+		*IndexBuffer,
+		0,
+		vk::IndexType::eUint16
+	);
 
-	cmd.draw(3, 1, 0, 0);
+	cmd.drawIndexed(static_cast<uint16_t>(indices.size()), 1, 0, 0, 0);
 	cmd.endRendering();
 
 	
