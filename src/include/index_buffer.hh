@@ -4,7 +4,11 @@
 #else
 import vulkan_hpp;
 #endif
+#include <vector>
+#include <cstdint>
 #include "glm/glm.hpp"
+#include "volk.h"
+#include "vk_mem_alloc.h"
 
 class LogicalDevice;
 class PhysicalDevice;
@@ -24,11 +28,13 @@ public:
 	
 	void updateUniformBuffer(uint32_t currentImage);
 	
+	~UBObuffer();
+	
 	const vk::raii::DescriptorSetLayout& getDescriptorSet () const { return descriptorSetLayout; }
 
 	const UniformBufferObject& getUBO() const { return ubo; }
 
-	void createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags properties, vk::raii::Buffer& buffer, vk::raii::DeviceMemory& bufferMemory, LogicalDevice& LogicalDev, PhysicalDevice& physicalDev);
+	void createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, VmaMemoryUsage memoryUsage, vk::raii::Buffer& buffer, VmaAllocation& allocation, LogicalDevice& LogicalDev);
 	
 	uint32_t findMemoryType(uint32_t typeFilter, vk::MemoryPropertyFlags properties, PhysicalDevice physicalDevice);
 
@@ -44,7 +50,7 @@ private:
 	vk::raii::PipelineLayout pipelineLayout = nullptr;
 
 	vk::raii::Buffer indexBuffer = nullptr;
-	vk::raii::DeviceMemory indexBufferMemory = nullptr;
+	VmaAllocation indexBufferAllocation = nullptr;
 
 	vk::raii::DescriptorPool descriptorPool = nullptr;
 	std::vector<vk::raii::DescriptorSet> descriptorSets;
@@ -52,8 +58,10 @@ private:
 	UniformBufferObject ubo{};
 
 	std::vector<vk::raii::Buffer> uniformBuffers;
-	std::vector<vk::raii::DeviceMemory> uniformBuffersMemory;
+	std::vector<VmaAllocation> uniformBuffersAllocation;
 	std::vector<void*> uniformBuffersMapped;
+	
+	VmaAllocator m_allocator = nullptr;
 	
 public:
 	const std::vector<vk::raii::DescriptorSet>& getDescriptorSets() const { return descriptorSets; }

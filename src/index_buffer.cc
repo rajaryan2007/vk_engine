@@ -6,6 +6,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <chrono>
 #include <memory>
+#include <stdexcept>
+#include <cstring>
 
 void UBObuffer::createDescriptorSetLayout(LogicalDevice& logicaldev)
 {
@@ -21,24 +23,47 @@ void UBObuffer::createDescriptorSetLayout(LogicalDevice& logicaldev)
 
 }
 
-void UBObuffer::createUniformBuffers(CommandPool& m_commandPool,PhysicalDevice& physicalDev,LogicalDevice& logicalDev)
+UBObuffer::~UBObuffer()
 {
+	if (m_allocator) {
+		for (size_t i = 0; i < uniformBuffers.size(); i++) {
+			if (uniformBuffersMapped[i]) {
+				vmaUnmapMemory(m_allocator, uniformBuffersAllocation[i]);
+			}
+			vmaDestroyBuffer(m_allocator, *uniformBuffers[i], uniformBuffersAllocation[i]);
+			uniformBuffers[i].release();
+		}
+		
+		if (indexBuffer != nullptr) {
+			vmaDestroyBuffer(m_allocator, *indexBuffer, indexBufferAllocation);
+			indexBuffer.release();
+		}
+	}
+}
+
+void UBObuffer::createUniformBuffers(CommandPool& m_commandPool, PhysicalDevice& physicalDev, LogicalDevice& logicalDev)
+{
+	m_allocator = logicalDev.GetAllocator();
 	const auto& MAX_FRAMES_IN_FLIGHT = m_commandPool.GetMaxFramesInFlight();
 
 	uniformBuffers.clear();
-	uniformBuffersMemory.clear();
+	uniformBuffersAllocation.clear();
 	uniformBuffersMapped.clear();
 
 	for (size_t i = 0; i < MAX_FRAMES_IN_FLIGHT; i++)
 	{
 		vk::DeviceSize bufferSize = sizeof(UniformBufferObject);
-		vk::raii::Buffer buffer({});
-		vk::raii::DeviceMemory bufferMem({});
-		createBuffer(bufferSize, vk::BufferUsageFlagBits::eUniformBuffer, vk::MemoryPropertyFlagBits::eHostVisible | vk::MemoryPropertyFlagBits::eHostCoherent, buffer, bufferMem,logicalDev,physicalDev);
+		vk::raii::Buffer buffer(nullptr);
+		VmaAllocation allocation;
+		
+		createBuffer(bufferSize, vk::BufferUsageFlagBits::eUniformBuffer, VMA_MEMORY_USAGE_CPU_TO_GPU, buffer, allocation, logicalDev);
 
 		uniformBuffers.emplace_back(std::move(buffer));
-		uniformBuffersMemory.emplace_back(std::move(bufferMem));
-		uniformBuffersMapped.emplace_back(uniformBuffersMemory[i].mapMemory(0, bufferSize));
+		uniformBuffersAllocation.emplace_back(allocation);
+		
+		void* mappedData;
+		vmaMapMemory(logicalDev.GetAllocator(), allocation, &mappedData);
+		uniformBuffersMapped.emplace_back(mappedData);
 	}
 }
 
@@ -62,20 +87,22 @@ void UBObuffer::updateUniformBuffer(uint32_t currentImage)
 }
 
 
-void UBObuffer::createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags properties, vk::raii::Buffer& buffer, vk::raii::DeviceMemory& bufferMemory,LogicalDevice& LogicalDev, PhysicalDevice& physicalDev)
+void UBObuffer::createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, VmaMemoryUsage memoryUsage, vk::raii::Buffer& buffer, VmaAllocation& allocation, LogicalDevice& LogicalDev)
 {
-	const  vk::raii::Device& device = LogicalDev.getLogicalDevice();
+	VkBufferCreateInfo bufferInfo = { VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO };
+	bufferInfo.size = size;
+	bufferInfo.usage = (VkBufferUsageFlags)usage;
+	bufferInfo.sharingMode = VK_SHARING_MODE_EXCLUSIVE;
 
+	VmaAllocationCreateInfo allocInfo = {};
+	allocInfo.usage = memoryUsage;
 
-	vk::BufferCreateInfo bufferInfo{ };
-	bufferInfo.size = size, bufferInfo.usage = usage, bufferInfo.sharingMode = vk::SharingMode::eExclusive;
+	VkBuffer vkBuffer;
+	if (vmaCreateBuffer(LogicalDev.GetAllocator(), &bufferInfo, &allocInfo, &vkBuffer, &allocation, nullptr) != VK_SUCCESS) {
+		throw std::runtime_error("failed to create buffer via VMA!");
+	}
 
-	buffer = vk::raii::Buffer(device, bufferInfo);
-	vk::MemoryRequirements memRequirements = buffer.getMemoryRequirements();
-	vk::MemoryAllocateInfo allocInfo{ };
-	allocInfo.allocationSize = memRequirements.size, allocInfo.memoryTypeIndex = findMemoryType(memRequirements.memoryTypeBits, properties,physicalDev);
-	bufferMemory = vk::raii::DeviceMemory(device, allocInfo);
-	buffer.bindMemory(bufferMemory, 0);
+	buffer = vk::raii::Buffer(LogicalDev.getLogicalDevice(), vkBuffer);
 }
 
 uint32_t UBObuffer::findMemoryType(uint32_t typeFilter, vk::MemoryPropertyFlags properties,PhysicalDevice physicalDevice)

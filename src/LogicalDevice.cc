@@ -1,4 +1,8 @@
+#include "volk.h"
 #include "LogicalDevice.hh"
+#include "physicalDevice.hh"
+#include "instance.hh"
+#include <glfw/glfw3.h>
 #include <algorithm>
 #include <assert.h>
 #include "Logger.h"
@@ -15,7 +19,7 @@ LogicalDevice::LogicalDevice()
    
 }
 
-void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice)
+void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice, VulkanInstance& Instance)
 {
 	auto const& physicalDev = physicalDevice.device();
 	std::vector<vk::QueueFamilyProperties> queueFamilyProperties = physicalDev.getQueueFamilyProperties();
@@ -54,7 +58,23 @@ void LogicalDevice::findLogicaldevice(PhysicalDevice& physicalDevice)
 	deviceCreateInfo.ppEnabledExtensionNames = requiredDeviceExtension.data();
 
 	m_logicalDevice = vk::raii::Device(physicalDev, deviceCreateInfo);
+	volkLoadDevice(*m_logicalDevice);
 	m_graphicsQueue = vk::raii::Queue(m_logicalDevice, queueIndex, 0);
+
+	VmaVulkanFunctions vulkanFunctions = {};
+	vulkanFunctions.vkGetInstanceProcAddr = vkGetInstanceProcAddr;
+	vulkanFunctions.vkGetDeviceProcAddr = vkGetDeviceProcAddr;
+
+	VmaAllocatorCreateInfo allocatorInfo = {};
+	allocatorInfo.physicalDevice = *physicalDev;
+	allocatorInfo.device = *m_logicalDevice;
+	allocatorInfo.instance = *Instance.instance();
+	allocatorInfo.pVulkanFunctions = &vulkanFunctions;
+	allocatorInfo.vulkanApiVersion = VK_API_VERSION_1_3;
+
+	if (vmaCreateAllocator(&allocatorInfo, &m_allocator) != VK_SUCCESS) {
+		throw std::runtime_error("failed to create VMA allocator!");
+	}
 }
 
 void LogicalDevice::createSurface(VulkanInstance& Instance, GLFWwindow* window)
@@ -75,4 +95,7 @@ void LogicalDevice::createSurface(VulkanInstance& Instance, GLFWwindow* window)
 LogicalDevice::~LogicalDevice()
 {
 	LOG("LogicalDevice Destructor");
+	if (m_allocator != nullptr) {
+		vmaDestroyAllocator(m_allocator);
+	}
 }

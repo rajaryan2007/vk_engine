@@ -1,10 +1,13 @@
-
-#define NOMINMAX
+#pragma once
 #if defined(__INTELLISENSE__) || !defined(USE_CPP20_MODULES)
-#	include <vulkan/vulkan_raii.hpp>
+#include <vulkan/vulkan_raii.hpp>
 #else
 import vulkan_hpp;
 #endif
+#include <vector>
+#include <cstdint>
+#include "volk.h"
+#include "vk_mem_alloc.h"
 
 struct Vertex;
 class PhysicalDevice;
@@ -17,7 +20,7 @@ class VertexBuffer {
 
 	uint32_t findMemoryType(uint32_t typeFilter, vk::MemoryPropertyFlags properties, PhysicalDevice& physicalDev);
 	void createVertexBuffer(const vk::raii::CommandPool& commandPool,PhysicalDevice& physicalDev, LogicalDevice& logicalDev, const std::vector<Vertex>& vertices);
-	void createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, vk::MemoryPropertyFlags properties, vk::raii::Buffer& buffer, vk::raii::DeviceMemory& bufferMemory, LogicalDevice& LogDevice, PhysicalDevice& physicalDev);
+	void createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage, VmaMemoryUsage memoryUsage, vk::raii::Buffer& buffer, VmaAllocation& allocation, LogicalDevice& LogDevice);
 	vk::raii::Buffer& get()  { return vertexBuffer; }
 	void copyBuffer(const vk::raii::CommandPool& commandPool, LogicalDevice& device,vk::raii::Buffer& srcBuffer, vk::raii::Buffer& dstBuffer, vk::DeviceSize size);
 	void createIndexBuffer(const vk::raii::CommandPool& commandPool, PhysicalDevice& physicalDev, LogicalDevice& logicalDev);
@@ -30,11 +33,12 @@ private:
 	};
 
 	vk::raii::Buffer vertexBuffer = nullptr;
-	vk::raii::DeviceMemory vertexBufferMemory = nullptr;
+	VmaAllocation vertexBufferAllocation = nullptr;
 
 	vk::raii::Buffer indexBuffer = nullptr;
-	vk::raii::DeviceMemory indexBufferMemory = nullptr;
+	VmaAllocation indexBufferAllocation = nullptr;
 
+	VmaAllocator m_allocator = nullptr;
 	uint32_t vertexBufferSize;
 };
 

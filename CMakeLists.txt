@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+add_definitions(-DVK_NO_PROTOTYPES)
+
 
 
 # GLFW options (important)
@@ -15,6 +17,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 file(GLOB_RECURSE SRC_FILES
     src/*.cpp
     src/*.cc
+    external/utils/volk.c
 )
 
 file(GLOB_RECURSE INCLUDE_FILES
@@ -32,7 +35,7 @@ add_executable(vk_engine
    ${SRC_FILES}
    ${INCLUDE_FILES}
 )
-target_include_directories(vk_engine PRIVATE src/include/)
+target_include_directories(vk_engine PRIVATE src/include/ external/utils/)
 # Link libraries
 target_link_libraries(vk_engine
     glfw

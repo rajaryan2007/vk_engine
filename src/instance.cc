@@ -1,5 +1,7 @@
+#include "volk.h"
 #include "instance.hh"
 #include <glfw/glfw3.h>
+
 const std::vector<char const*> validationLayers = {
 	"VK_LAYER_KHRONOS_validation"
 };
@@ -15,9 +17,9 @@ constexpr bool enableValidationLayers = true;
 VulkanInstance::VulkanInstance()
 	: m_instance(nullptr), m_context()
 {
-	
-	
-	
+	if (volkInitialize() != VK_SUCCESS) {
+		throw std::runtime_error("failed to initialize volk!");
+	}
 }
 
 void VulkanInstance::createInstance()
@@ -85,6 +87,7 @@ void VulkanInstance::createInstance()
 	}
 
 	m_instance = vk::raii::Instance(m_context, createInfo);
+	volkLoadInstance(*m_instance);
 	if (enableValidationLayers) {
 		m_debugMessenger =
 			vk::raii::DebugUtilsMessengerEXT(m_instance, debugCreateInfo);

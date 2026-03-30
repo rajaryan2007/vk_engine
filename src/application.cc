@@ -30,7 +30,7 @@ void Application::initVulkan() {
 	
 	m_logicalDevice.createSurface(m_instance, m_window);
 	m_physicalDevice.createPhysicalDevice(m_instance);
-	m_logicalDevice.findLogicaldevice(m_physicalDevice);
+	m_logicalDevice.findLogicaldevice(m_physicalDevice, m_instance);
 	m_swapchain.createSwapChain(m_physicalDevice, m_logicalDevice, *m_window);
 	m_swapchain.createImageViews(m_logicalDevice);
 	
