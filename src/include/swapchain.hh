@@ -34,7 +34,7 @@ public:
 	const vk::SurfaceFormatKHR GetSurfaceFormat() const { return swapChainSurfaceFormat; };
 	const std::vector<vk::Image>& GetImage() const { return swapChainImages; }
 	const vk::raii::SwapchainKHR& getSwapChain() { return swapChain; }
-	const std::vector<vk::raii::ImageView>& const GetImageView(){ return swapChainImageViews; }
+	const std::vector<vk::raii::ImageView>& GetImageView() const { return swapChainImageViews; }
 private:
 	vk::raii::SwapchainKHR           swapChain = nullptr;
 	std::vector<vk::Image>           swapChainImages;

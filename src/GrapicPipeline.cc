@@ -3,6 +3,8 @@
 #include "GrapicPipeline.hh"
 #include "Logger.h"
 #include "utils.hh"
+#include "index_buffer.hh"
+
 
 
 GrapicPileline::GrapicPileline()
@@ -17,9 +19,11 @@ GrapicPileline::~GrapicPileline()
 
 
 
-void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, vk::SurfaceFormatKHR swapChainSurfaceFormat)
+void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, UBObuffer& ubodesptorset,vk::SurfaceFormatKHR swapChainSurfaceFormat)
 {
 	LOG("GrapicPipeline Init")
+		const auto& m_descriptorsetLayoutInfo = ubodesptorset.getDescriptorSet();
+
 	vk::raii::ShaderModule shaderModule = createShaderModule(readFile("slang.spv"),Device);
 	vk::PipelineShaderStageCreateInfo vertShaderStageInfo{};
 	vertShaderStageInfo.stage = vk::ShaderStageFlagBits::eVertex;
@@ -69,7 +73,7 @@ void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, v
 		vk::False,                  // rasterizerDiscardEnable
 		vk::PolygonMode::eFill,     // polygonMode
 		vk::CullModeFlagBits::eBack,// cullMode
-		vk::FrontFace::eClockwise,  // frontFace
+		vk::FrontFace::eCounterClockwise,  // frontFace
 		vk::False,                  // depthBiasEnable
 		0.0f,                       // depthBiasConstantFactor
 		0.0f,                       // depthBiasClamp
@@ -102,8 +106,9 @@ void GrapicPileline::Init(LogicalDevice& Device, vk::Extent2D swapChainExtent, v
 	colorBlending.pAttachments = &colorBlendAttachment;
 
 	vk::PipelineLayoutCreateInfo pipelineLayoutInfo{};
-	pipelineLayoutInfo.setLayoutCount = 0;
+	pipelineLayoutInfo.setLayoutCount = 1;
 	pipelineLayoutInfo.pushConstantRangeCount = 0;
+	pipelineLayoutInfo.pSetLayouts = &*m_descriptorsetLayoutInfo;
 
 	pipelineLayout = vk::raii::PipelineLayout(Device.getLogicalDevice(), pipelineLayoutInfo);
 	vk::Format colorFormat = swapChainSurfaceFormat.format;

@@ -1,4 +1,5 @@
 #include "application.hh"
+#include <glm/glm.hpp>
 
 constexpr uint32_t WIDTH = 800;
 constexpr uint32_t HEIGHT = 600;
@@ -32,9 +33,16 @@ void Application::initVulkan() {
 	m_logicalDevice.findLogicaldevice(m_physicalDevice);
 	m_swapchain.createSwapChain(m_physicalDevice, m_logicalDevice, *m_window);
 	m_swapchain.createImageViews(m_logicalDevice);
-	m_graphicPipeline.Init(m_logicalDevice,m_swapchain.GetExtent(),m_swapchain.GetSurfaceFormat());
+	
+	m_Uniformbuffer.createDescriptorSetLayout(m_logicalDevice);
+	m_graphicPipeline.Init(m_logicalDevice,m_swapchain.GetExtent(),m_Uniformbuffer,m_swapchain.GetSurfaceFormat());
 	
 	m_CommandPool->Init(m_logicalDevice);
+	m_Uniformbuffer.createUniformBuffers(*m_CommandPool, m_physicalDevice, m_logicalDevice);
+	m_Uniformbuffer.createDescriptorPool(m_logicalDevice, *m_CommandPool);
+	m_Uniformbuffer.createDescriptorSets(m_logicalDevice, *m_CommandPool);
+
+
 	const auto& commmandPool = m_CommandPool->GetCommandPool();
 	m_vertexBuffer.createVertexBuffer(commmandPool,m_physicalDevice, m_logicalDevice, vertices);
 	m_vertexBuffer.createIndexBuffer(commmandPool, m_physicalDevice, m_logicalDevice);
@@ -108,6 +116,7 @@ void Application::drawFrame()
 	const auto& swapChain = m_swapchain.getSwapChain();
 
 	auto fenceResult = device.waitForFences(*inFlightFences[frameIndex], vk::True, UINT64_MAX);
+	m_Uniformbuffer.updateUniformBuffer(frameIndex);
 	if(fenceResult != vk::Result::eSuccess)
 	{
 		throw std::runtime_error("failed to wait for fence!");
@@ -128,7 +137,7 @@ void Application::drawFrame()
     auto& vertexBuffer = m_vertexBuffer.get();
 	const auto& IndexBuffer = m_vertexBuffer.getIndexBuffer();	
 	auto& indices = m_vertexBuffer.getIndices();
-	m_CommandPool->recordCommandBuffer(vertexBuffer,m_graphicPipeline,imageIndex, m_swapchain,IndexBuffer,indices);
+	m_CommandPool->recordCommandBuffer(vertexBuffer,m_graphicPipeline,imageIndex, m_swapchain,IndexBuffer,indices, m_Uniformbuffer.getDescriptorSets());
 	
 	device.resetFences(*inFlightFences[frameIndex]);
 	
@@ -139,7 +148,7 @@ void Application::drawFrame()
 	submitInfo.pWaitDstStageMask = &waitDestinationStageMask;
 	submitInfo.commandBufferCount = 1;
 	
-	submitInfo.pCommandBuffers = &*m_CommandPool->GetCommandBuffer();;
+	submitInfo.pCommandBuffers = &*m_CommandPool->GetCommandBuffer();
 	submitInfo.signalSemaphoreCount = 1;
 	submitInfo.pSignalSemaphores = &*renderFinishedSemaphores[imageIndex];
 

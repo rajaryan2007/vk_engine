@@ -12,23 +12,22 @@ void CommandPool::Init(LogicalDevice& Device)
 	poolInfo.queueFamilyIndex = queueIndex;
 	
 
-	// Use .emplace() to construct the object in-place
+	
 	m_commandPool.emplace(Device.getLogicalDevice(), poolInfo);
 }
 
 void CommandPool::createCommandBuffer(LogicalDevice& Device)
 {
-	// 1. Safety check: make sure the pool was actually created
-	if (!m_commandPool.has_value()) {
+		if (!m_commandPool.has_value()) {
 		throw std::runtime_error("CommandPool used before Init was called!");
 	}
 
 	vk::CommandBufferAllocateInfo allocInfo{};
-	// 2. Use the * to get the inner handle
+	
 	allocInfo.commandPool = *m_commandPool;
 	allocInfo.level = vk::CommandBufferLevel::ePrimary;
 	allocInfo.commandBufferCount = MAX_FRAMES_IN_FLIGHT;
-	// Access the first element in the returned collection
+	
 	m_commandBuffer = vk::raii::CommandBuffers(Device.getLogicalDevice(), allocInfo);
 }
 
@@ -57,8 +56,9 @@ void CommandPool::transition_image_layout(auto& cmd,Swapchain& swapchain,uint32_
 
 }
 
-void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian,const vk::raii::Buffer& IndexBuffer, std::vector<uint16_t> indices)
+void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian,const vk::raii::Buffer& IndexBuffer, const std::vector<uint16_t>& indices, const std::vector<vk::raii::DescriptorSet>& descriptorSets)
 { 
+	const auto& pipelineLayout = grapic.GetPipelineLayout();
 	auto& cmd = m_commandBuffer[frameIndex];
     
 
@@ -78,7 +78,7 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 	);
 
 	
-    vk::ClearValue  clearColor = vk::ClearColorValue(0.0f, 0.0f, 0.0f, 1.0f);
+    vk::ClearValue  clearColor = vk::ClearColorValue(std::array<float, 4>{0.0f, 0.0f, 1.0f, 1.0f});
     
 	const auto& swapChainImageView= swapchian.GetImageView();
 	vk::RenderingAttachmentInfo attachmentInfo{};
@@ -118,7 +118,9 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 		vk::IndexType::eUint16
 	);
 
-	cmd.drawIndexed(static_cast<uint16_t>(indices.size()), 1, 0, 0, 0);
+	cmd.bindDescriptorSets(vk::PipelineBindPoint::eGraphics, pipelineLayout, 0, *descriptorSets[frameIndex], nullptr);
+	cmd.drawIndexed(static_cast<uint32_t>(indices.size()), 1, 0, 0, 0);
+
 	cmd.endRendering();
 
 	

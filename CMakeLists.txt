@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+
+
 # GLFW options (important)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
@@ -20,7 +22,6 @@ file(GLOB_RECURSE INCLUDE_FILES
     
 )
 
-# Add GLFW from local folder
 add_subdirectory(external/glfw)
 
 # Vulkan

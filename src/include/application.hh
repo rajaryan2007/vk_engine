@@ -8,6 +8,7 @@
 #include "GrapicPipeline.hh"
 #include "CommandPool.hh"
 #include "vertexBuffer.hh"
+#include "index_buffer.hh"
 #include "utils.hh"
 #include <memory>
 #include <utility>
@@ -40,10 +41,14 @@ private:
 	VulkanInstance m_instance;
 	PhysicalDevice m_physicalDevice;
 	LogicalDevice m_logicalDevice;
+	UBObuffer m_Uniformbuffer;
+
+
 	Swapchain m_swapchain;
 	GrapicPileline m_graphicPipeline;
 	VertexBuffer m_vertexBuffer;
 	std::shared_ptr<CommandPool> m_CommandPool;
+	
 	uint32_t& frameIndex = m_CommandPool->GetFrameIndex();
 	std::vector<vk::raii::Semaphore> presentCompleteSemaphores;
 	std::vector<vk::raii::Semaphore> renderFinishedSemaphores;

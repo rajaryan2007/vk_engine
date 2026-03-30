@@ -14,7 +14,7 @@ public:
 	~PhysicalDevice();
 	void createPhysicalDevice(VulkanInstance& myInstanceWrapper);
 
-	vk::raii::PhysicalDevice& device() { return m_physical_device; }
+	inline vk::raii::PhysicalDevice& device() { return m_physical_device; }
 
 private:
 	vk::raii::PhysicalDevice m_physical_device = nullptr;

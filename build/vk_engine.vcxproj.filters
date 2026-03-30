@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\application.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\index_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\instance.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -43,6 +46,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\application.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\index_buffer.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\instance.hh">

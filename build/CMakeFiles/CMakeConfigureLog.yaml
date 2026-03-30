@@ -36,7 +36,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -51,7 +50,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -66,6 +64,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -86,6 +85,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -102,7 +104,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 01-03-2026 11:57:07 PM.
+      Build started 30-03-2026 01:47:05 PM.
       
       Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -136,7 +138,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.44
+      Time Elapsed 00:00:01.61
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -170,7 +172,6 @@ events:
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -185,7 +186,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -200,6 +200,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -213,13 +214,15 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -234,7 +237,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -249,6 +251,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -269,6 +272,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -293,7 +299,6 @@ events:
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -308,7 +313,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -323,6 +327,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -336,6 +341,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
@@ -343,9 +351,6 @@ events:
       - "C:/VulkanSDK/1.4.341.1/Bin/lld-link.com"
       - "C:/VulkanSDK/1.4.341.1/Bin/lld-link.exe"
       - "C:/VulkanSDK/1.4.341.1/Bin/lld-link"
-      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link.com"
-      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link.exe"
-      - "C:/VulkanSDK/1.4.321.1/Bin/lld-link"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
@@ -388,9 +393,6 @@ events:
       - "C:/Program Files/PostgreSQL/18/bin/lld-link.com"
       - "C:/Program Files/PostgreSQL/18/bin/lld-link.exe"
       - "C:/Program Files/PostgreSQL/18/bin/lld-link"
-      - "C:/Program Files/PowerShell/7/lld-link.com"
-      - "C:/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/ninja-win/lld-link.com"
       - "C:/ninja-win/lld-link.exe"
       - "C:/ninja-win/lld-link"
@@ -433,6 +435,9 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
       - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
       - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link.com"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link.exe"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/lld-link"
@@ -462,7 +467,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -477,7 +481,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -492,6 +495,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -512,6 +516,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -534,7 +541,6 @@ events:
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -549,7 +555,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -564,6 +569,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -577,13 +583,15 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -598,7 +606,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -613,6 +620,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -633,6 +641,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -655,7 +666,6 @@ events:
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -670,7 +680,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -685,6 +694,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -698,6 +708,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
@@ -705,9 +718,6 @@ events:
       - "C:/VulkanSDK/1.4.341.1/Bin/mt.com"
       - "C:/VulkanSDK/1.4.341.1/Bin/mt.exe"
       - "C:/VulkanSDK/1.4.341.1/Bin/mt"
-      - "C:/VulkanSDK/1.4.321.1/Bin/mt.com"
-      - "C:/VulkanSDK/1.4.321.1/Bin/mt.exe"
-      - "C:/VulkanSDK/1.4.321.1/Bin/mt"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt"
@@ -750,9 +760,6 @@ events:
       - "C:/Program Files/PostgreSQL/18/bin/mt.com"
       - "C:/Program Files/PostgreSQL/18/bin/mt.exe"
       - "C:/Program Files/PostgreSQL/18/bin/mt"
-      - "C:/Program Files/PowerShell/7/mt.com"
-      - "C:/Program Files/PowerShell/7/mt.exe"
-      - "C:/Program Files/PowerShell/7/mt"
       - "C:/ninja-win/mt.com"
       - "C:/ninja-win/mt.exe"
       - "C:/ninja-win/mt"
@@ -795,6 +802,9 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
       - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
       - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Program Files/PowerShell/7/mt.com"
+      - "C:/Program Files/PowerShell/7/mt.exe"
+      - "C:/Program Files/PowerShell/7/mt"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt.com"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt.exe"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/mt"
@@ -834,11 +844,19 @@ events:
       - "C:/Users/rion/go/bin/mt.com"
       - "C:/Users/rion/go/bin/mt.exe"
       - "C:/Users/rion/go/bin/mt"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/mt"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/mt.com"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/mt.exe"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/mt"
     found: false
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -853,7 +871,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -868,6 +885,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -888,6 +906,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -910,7 +931,6 @@ events:
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -925,7 +945,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -940,6 +959,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -953,13 +973,15 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -974,7 +996,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -989,6 +1010,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -1009,6 +1031,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1037,7 +1062,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -1052,7 +1076,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -1067,6 +1090,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -1087,6 +1111,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -1103,7 +1130,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.40+3e7442088 for .NET Framework
-      Build started 01-03-2026 11:57:10 PM.
+      Build started 30-03-2026 01:47:07 PM.
       
       Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\4.1.0-rc3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -1137,7 +1164,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.33
+      Time Elapsed 00:00:01.17
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1171,7 +1198,6 @@ events:
       - "rc"
     candidate_directories:
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -1186,7 +1212,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -1201,6 +1226,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -1214,6 +1240,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1230,9 +1259,6 @@ events:
       - "C:/VulkanSDK/1.4.341.1/Bin/rc.com"
       - "C:/VulkanSDK/1.4.341.1/Bin/rc.exe"
       - "C:/VulkanSDK/1.4.341.1/Bin/rc"
-      - "C:/VulkanSDK/1.4.321.1/Bin/rc.com"
-      - "C:/VulkanSDK/1.4.321.1/Bin/rc.exe"
-      - "C:/VulkanSDK/1.4.321.1/Bin/rc"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.com"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.exe"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc"
@@ -1275,9 +1301,6 @@ events:
       - "C:/Program Files/PostgreSQL/18/bin/rc.com"
       - "C:/Program Files/PostgreSQL/18/bin/rc.exe"
       - "C:/Program Files/PostgreSQL/18/bin/rc"
-      - "C:/Program Files/PowerShell/7/rc.com"
-      - "C:/Program Files/PowerShell/7/rc.exe"
-      - "C:/Program Files/PowerShell/7/rc"
       - "C:/ninja-win/rc.com"
       - "C:/ninja-win/rc.exe"
       - "C:/ninja-win/rc"
@@ -1320,6 +1343,9 @@ events:
       - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
       - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
       - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Program Files/PowerShell/7/rc.com"
+      - "C:/Program Files/PowerShell/7/rc.exe"
+      - "C:/Program Files/PowerShell/7/rc"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc.com"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc.exe"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/rc"
@@ -1359,6 +1385,15 @@ events:
       - "C:/Users/rion/go/bin/rc.com"
       - "C:/Users/rion/go/bin/rc.exe"
       - "C:/Users/rion/go/bin/rc"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/rc"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/rc.com"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/rc.exe"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -1399,7 +1434,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -1414,7 +1448,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -1429,6 +1462,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -1449,6 +1483,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1464,8 +1501,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ammzz8"
-      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ammzz8"
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fl21tq"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fl21tq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1474,45 +1511,45 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ammzz8'
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fl21tq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_068e5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_54424.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 01-03-2026 11:57:13 PM.
+        Build started 30-03-2026 01:47:08 PM.
         
-        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\cmTC_068e5.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\cmTC_54424.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_068e5.dir\\Debug\\".
+          Creating directory "cmTC_54424.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\Debug\\".
-          Creating directory "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\".
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\Debug\\".
+          Creating directory "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\unsuccessfulbuild".
+          Creating "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_068e5.dir\\Debug\\\\" /Fd"cmTC_068e5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_54424.dir\\Debug\\\\" /Fd"cmTC_54424.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_068e5.dir\\Debug\\\\" /Fd"cmTC_068e5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_54424.dir\\Debug\\\\" /Fd"cmTC_54424.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\Debug\\cmTC_068e5.exe" /INCREMENTAL /ILK:"cmTC_068e5.dir\\Debug\\cmTC_068e5.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ammzz8/Debug/cmTC_068e5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ammzz8/Debug/cmTC_068e5.lib" /MACHINE:X64  /machine:x64 cmTC_068e5.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_068e5.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\Debug\\cmTC_068e5.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\Debug\\cmTC_54424.exe" /INCREMENTAL /ILK:"cmTC_54424.dir\\Debug\\cmTC_54424.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fl21tq/Debug/cmTC_54424.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fl21tq/Debug/cmTC_54424.lib" /MACHINE:X64  /machine:x64 cmTC_54424.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_54424.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\Debug\\cmTC_54424.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\Debug\\cmTC_068e5.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\cmTC_068e5.write.1u.tlog" "cmTC_068e5.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\Debug\\cmTC_54424.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\cmTC_54424.write.1u.tlog" "cmTC_54424.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\unsuccessfulbuild".
-          Touching "cmTC_068e5.dir\\Debug\\cmTC_068e5.tlog\\cmTC_068e5.lastbuildstate".
-        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ammzz8\\cmTC_068e5.vcxproj" (default targets).
+          Deleting file "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\unsuccessfulbuild".
+          Touching "cmTC_54424.dir\\Debug\\cmTC_54424.tlog\\cmTC_54424.lastbuildstate".
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fl21tq\\cmTC_54424.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.21
+        Time Elapsed 00:00:01.38
         
       exitCode: 0
   -
@@ -1541,7 +1578,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35223.0
+      Microsoft (R) Incremental Linker Version 14.44.35224.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -1552,8 +1589,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-wr6eat"
-      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-wr6eat"
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ewyrl1"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ewyrl1"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1563,45 +1600,45 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-wr6eat'
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ewyrl1'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2cf07.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c0433.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 01-03-2026 11:57:15 PM.
+        Build started 30-03-2026 01:47:10 PM.
         
-        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\cmTC_2cf07.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\cmTC_c0433.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_2cf07.dir\\Debug\\".
+          Creating directory "cmTC_c0433.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\Debug\\".
-          Creating directory "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\".
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\Debug\\".
+          Creating directory "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\unsuccessfulbuild".
+          Creating "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2cf07.dir\\Debug\\\\" /Fd"cmTC_2cf07.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_c0433.dir\\Debug\\\\" /Fd"cmTC_c0433.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_2cf07.dir\\Debug\\\\" /Fd"cmTC_2cf07.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_c0433.dir\\Debug\\\\" /Fd"cmTC_c0433.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\Debug\\cmTC_2cf07.exe" /INCREMENTAL /ILK:"cmTC_2cf07.dir\\Debug\\cmTC_2cf07.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-wr6eat/Debug/cmTC_2cf07.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-wr6eat/Debug/cmTC_2cf07.lib" /MACHINE:X64  /machine:x64 cmTC_2cf07.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2cf07.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\Debug\\cmTC_2cf07.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\Debug\\cmTC_c0433.exe" /INCREMENTAL /ILK:"cmTC_c0433.dir\\Debug\\cmTC_c0433.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ewyrl1/Debug/cmTC_c0433.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-ewyrl1/Debug/cmTC_c0433.lib" /MACHINE:X64  /machine:x64 cmTC_c0433.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_c0433.vcxproj -> C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\Debug\\cmTC_c0433.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\Debug\\cmTC_2cf07.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\cmTC_2cf07.write.1u.tlog" "cmTC_2cf07.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\rion\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\Debug\\cmTC_c0433.exe" "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\cmTC_c0433.write.1u.tlog" "cmTC_c0433.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\unsuccessfulbuild".
-          Touching "cmTC_2cf07.dir\\Debug\\cmTC_2cf07.tlog\\cmTC_2cf07.lastbuildstate".
-        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wr6eat\\cmTC_2cf07.vcxproj" (default targets).
+          Deleting file "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c0433.dir\\Debug\\cmTC_c0433.tlog\\cmTC_c0433.lastbuildstate".
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ewyrl1\\cmTC_c0433.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.20
+        Time Elapsed 00:00:01.22
         
       exitCode: 0
   -
@@ -1630,7 +1667,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.44.35223.0
+      Microsoft (R) Incremental Linker Version 14.44.35224.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -1643,8 +1680,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-eph3s4"
-      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-eph3s4"
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fzaxpo"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fzaxpo"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1654,43 +1691,43 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-eph3s4'
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-fzaxpo'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9dffa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e3edb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 01-03-2026 11:57:18 PM.
+        Build started 30-03-2026 01:47:12 PM.
         
-        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\cmTC_9dffa.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\cmTC_e3edb.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_9dffa.dir\\Debug\\".
+          Creating directory "cmTC_e3edb.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\Debug\\".
-          Creating directory "cmTC_9dffa.dir\\Debug\\cmTC_9dffa.tlog\\".
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\Debug\\".
+          Creating directory "cmTC_e3edb.dir\\Debug\\cmTC_e3edb.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_9dffa.dir\\Debug\\cmTC_9dffa.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_9dffa.dir\\Debug\\cmTC_9dffa.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e3edb.dir\\Debug\\cmTC_e3edb.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e3edb.dir\\Debug\\cmTC_e3edb.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9dffa.dir\\Debug\\\\" /Fd"cmTC_9dffa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e3edb.dir\\Debug\\\\" /Fd"cmTC_e3edb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_9dffa.dir\\Debug\\\\" /Fd"cmTC_9dffa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\src.c"
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e3edb.dir\\Debug\\\\" /Fd"cmTC_e3edb.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\src.c"
           src.c
-        C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\cmTC_9dffa.vcxproj]
-        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\cmTC_9dffa.vcxproj" (default targets) -- FAILED.
+        C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\cmTC_e3edb.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\cmTC_e3edb.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\cmTC_9dffa.vcxproj" (default target) (1) ->
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\cmTC_e3edb.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-eph3s4\\cmTC_9dffa.vcxproj]
+          C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fzaxpo\\cmTC_e3edb.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.38
+        Time Elapsed 00:00:00.42
         
       exitCode: 1
   -
@@ -1703,8 +1740,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-a4t0dd"
-      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-a4t0dd"
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-gn1j9s"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-gn1j9s"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1714,45 +1751,45 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-a4t0dd'
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-gn1j9s'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e75d6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ee683.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 01-03-2026 11:57:19 PM.
+        Build started 30-03-2026 01:47:13 PM.
         
-        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\cmTC_e75d6.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\cmTC_ee683.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e75d6.dir\\Debug\\".
+          Creating directory "cmTC_ee683.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\Debug\\".
-          Creating directory "cmTC_e75d6.dir\\Debug\\cmTC_e75d6.tlog\\".
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\Debug\\".
+          Creating directory "cmTC_ee683.dir\\Debug\\cmTC_ee683.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e75d6.dir\\Debug\\cmTC_e75d6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e75d6.dir\\Debug\\cmTC_e75d6.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ee683.dir\\Debug\\cmTC_ee683.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ee683.dir\\Debug\\cmTC_ee683.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e75d6.dir\\Debug\\\\" /Fd"cmTC_e75d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_ee683.dir\\Debug\\\\" /Fd"cmTC_ee683.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_e75d6.dir\\Debug\\\\" /Fd"cmTC_e75d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\CheckFunctionExists.c"
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_ee683.dir\\Debug\\\\" /Fd"cmTC_ee683.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\Debug\\cmTC_e75d6.exe" /INCREMENTAL /ILK:"cmTC_e75d6.dir\\Debug\\cmTC_e75d6.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-a4t0dd/Debug/cmTC_e75d6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-a4t0dd/Debug/cmTC_e75d6.lib" /MACHINE:X64  /machine:x64 cmTC_e75d6.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\cmTC_e75d6.vcxproj]
-        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\cmTC_e75d6.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\Debug\\cmTC_ee683.exe" /INCREMENTAL /ILK:"cmTC_ee683.dir\\Debug\\cmTC_ee683.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-gn1j9s/Debug/cmTC_ee683.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-gn1j9s/Debug/cmTC_ee683.lib" /MACHINE:X64  /machine:x64 cmTC_ee683.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\cmTC_ee683.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\cmTC_ee683.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\cmTC_e75d6.vcxproj" (default target) (1) ->
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\cmTC_ee683.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-a4t0dd\\cmTC_e75d6.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gn1j9s\\cmTC_ee683.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.49
         
       exitCode: 1
   -
@@ -1765,8 +1802,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mvo2z0"
-      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mvo2z0"
+      source: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-5gqcdy"
+      binary: "C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-5gqcdy"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1776,52 +1813,52 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mvo2z0'
+        Change Dir: 'C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-5gqcdy'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5380f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b5cd7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.40+3e7442088 for .NET Framework
-        Build started 01-03-2026 11:57:19 PM.
+        Build started 30-03-2026 01:47:14 PM.
         
-        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\cmTC_5380f.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\cmTC_b5cd7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_5380f.dir\\Debug\\".
+          Creating directory "cmTC_b5cd7.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\Debug\\".
-          Creating directory "cmTC_5380f.dir\\Debug\\cmTC_5380f.tlog\\".
+          Creating directory "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\Debug\\".
+          Creating directory "cmTC_b5cd7.dir\\Debug\\cmTC_b5cd7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_5380f.dir\\Debug\\cmTC_5380f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_5380f.dir\\Debug\\cmTC_5380f.tlog\\unsuccessfulbuild".
+          Creating "cmTC_b5cd7.dir\\Debug\\cmTC_b5cd7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b5cd7.dir\\Debug\\cmTC_b5cd7.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5380f.dir\\Debug\\\\" /Fd"cmTC_5380f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35223 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_b5cd7.dir\\Debug\\\\" /Fd"cmTC_b5cd7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_5380f.dir\\Debug\\\\" /Fd"cmTC_5380f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\CheckFunctionExists.c"
+          cl /c /I"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_b5cd7.dir\\Debug\\\\" /Fd"cmTC_b5cd7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\Debug\\cmTC_5380f.exe" /INCREMENTAL /ILK:"cmTC_5380f.dir\\Debug\\cmTC_5380f.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mvo2z0/Debug/cmTC_5380f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-mvo2z0/Debug/cmTC_5380f.lib" /MACHINE:X64  /machine:x64 cmTC_5380f.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\cmTC_5380f.vcxproj]
-        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\cmTC_5380f.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\Debug\\cmTC_b5cd7.exe" /INCREMENTAL /ILK:"cmTC_b5cd7.dir\\Debug\\cmTC_b5cd7.ilk" /NOLOGO /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\rion\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-5gqcdy/Debug/cmTC_b5cd7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/rion/Documents/vs code/vk_engine/build/CMakeFiles/CMakeScratch/TryCompile-5gqcdy/Debug/cmTC_b5cd7.lib" /MACHINE:X64  /machine:x64 cmTC_b5cd7.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\cmTC_b5cd7.vcxproj]
+        Done Building Project "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\cmTC_b5cd7.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\cmTC_5380f.vcxproj" (default target) (1) ->
+        "C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\cmTC_b5cd7.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvo2z0\\cmTC_5380f.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\rion\\Documents\\vs code\\vk_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5gqcdy\\cmTC_b5cd7.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:00.47
         
       exitCode: 1
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:387 (find_path)"
-      - "CMakeLists.txt:27 (find_package)"
+      - "CMakeLists.txt:28 (find_package)"
     mode: "path"
     variable: "Vulkan_INCLUDE_DIR"
     description: "Path to a file."
@@ -1838,7 +1875,6 @@ events:
     candidate_directories:
       - "C:/VulkanSDK/1.4.341.1/include/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -1853,7 +1889,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -1868,6 +1903,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -1881,6 +1917,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -1893,7 +1932,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -1908,7 +1946,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -1923,6 +1960,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -1943,6 +1981,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -1953,7 +1994,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:394 (find_library)"
-      - "CMakeLists.txt:27 (find_package)"
+      - "CMakeLists.txt:28 (find_package)"
     mode: "library"
     variable: "Vulkan_LIBRARY"
     description: "Path to a library."
@@ -1971,7 +2012,6 @@ events:
       - "C:/VulkanSDK/1.4.341.1/lib/"
       - "C:/VulkanSDK/1.4.341.1/bin/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -1986,7 +2026,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -2001,6 +2040,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -2014,6 +2054,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -2028,7 +2071,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -2043,7 +2085,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -2058,6 +2099,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -2078,6 +2120,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2092,7 +2137,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:402 (find_program)"
-      - "CMakeLists.txt:27 (find_package)"
+      - "CMakeLists.txt:28 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLC_EXECUTABLE"
     description: "Path to a program."
@@ -2109,7 +2154,6 @@ events:
     candidate_directories:
       - "C:/VulkanSDK/1.4.341.1/bin/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -2124,7 +2168,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -2139,6 +2182,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -2152,6 +2196,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2170,7 +2217,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -2185,7 +2231,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -2200,6 +2245,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -2220,6 +2266,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -2230,7 +2279,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindVulkan.cmake:410 (find_program)"
-      - "CMakeLists.txt:27 (find_package)"
+      - "CMakeLists.txt:28 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
     description: "Path to a program."
@@ -2247,7 +2296,6 @@ events:
     candidate_directories:
       - "C:/VulkanSDK/1.4.341.1/bin/"
       - "C:/VulkanSDK/1.4.341.1/Bin/"
-      - "C:/VulkanSDK/1.4.321.1/Bin/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
@@ -2262,7 +2310,6 @@ events:
       - "C:/Program Files/Microsoft SQL Server/170/Tools/Binn/"
       - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
       - "C:/Program Files/PostgreSQL/18/bin/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/ninja-win/"
       - "C:/Program Files/Git/cmd/"
       - "C:/Program Files/dotnet/"
@@ -2277,6 +2324,7 @@ events:
       - "C:/Program Files/Go/bin/"
       - "C:/Program Files/doxygen/bin/"
       - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files/JetBrains/WebStorm 2025.1.4.1/bin/"
       - "C:/MinGW/bin/"
       - "C:/Users/rion/.dotnet/tools/"
@@ -2290,6 +2338,9 @@ events:
       - "C:/ispc-v1.29.1-windows/ispc-v1.29.1-windows/bin/"
       - "C:/Users/rion/AppData/Local/Python/bin/"
       - "C:/Users/rion/go/bin/"
+      - "C:/Users/rion/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/rion/AppData/Local/gitkraken/bin/"
+      - "C:/Users/rion/AppData/Local/Programs/cursor/resources/app/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -2308,7 +2359,6 @@ events:
     search_context:
       ENV{PATH}:
         - "C:\\VulkanSDK\\1.4.341.1\\Bin"
-        - "C:\\VulkanSDK\\1.4.321.1\\Bin"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
         - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\WINDOWS\\system32"
@@ -2323,7 +2373,6 @@ events:
         - "C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\"
         - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\PostgreSQL\\18\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\ninja-win"
         - "C:\\Program Files\\Git\\cmd"
         - "C:\\Program Files\\dotnet\\"
@@ -2338,6 +2387,7 @@ events:
         - "C:\\Program Files\\Go\\bin"
         - "C:\\Program Files\\doxygen\\bin"
         - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\PowerShell\\7\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python311\\"
         - "C:\\Users\\rion\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
@@ -2358,6 +2408,9 @@ events:
         - "C:\\ispc-v1.29.1-windows\\ispc-v1.29.1-windows\\bin"
         - "C:\\Users\\rion\\AppData\\Local\\Python\\bin"
         - "C:\\Users\\rion\\go\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\gitkraken\\bin"
+        - "C:\\Users\\rion\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
       CMAKE_INSTALL_PREFIX: "C:/Program Files/vk_engine"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
