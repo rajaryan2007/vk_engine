@@ -34,7 +34,12 @@ find_package(Vulkan REQUIRED)
 add_executable(vk_engine
    ${SRC_FILES}
    ${INCLUDE_FILES}
+        src/include/demo.hh
+        src/demo.cc
 )
+
+set_target_properties(${project_name} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}/shader")
+
 target_include_directories(vk_engine PRIVATE src/include/ external/utils/)
 # Link libraries
 target_link_libraries(vk_engine

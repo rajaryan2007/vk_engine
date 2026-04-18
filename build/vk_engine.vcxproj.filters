@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\external\utils\volk.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\CommandPool.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -11,6 +14,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\application.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\demo.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\index_buffer.cc">
@@ -34,6 +40,9 @@
     <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\vertexBuffer.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\rion\Documents\vs code\vk_engine\src\vma_implementation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\CommandPool.hh">
@@ -46,6 +55,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\application.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\demo.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\rion\Documents\vs code\vk_engine\src\include\index_buffer.hh">

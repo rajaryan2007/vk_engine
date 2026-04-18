@@ -189,7 +189,7 @@ void Application::drawFrame()
 
 void Application::createSyncObjects( )
 {   
-	auto MAX_FRAMES_IN_FLIGHT = m_CommandPool->GetMaxFramesInFlight();
+	const auto& MAX_FRAMES_IN_FLIGHT = m_CommandPool->GetMaxFramesInFlight();
 	const auto& device = m_logicalDevice.getLogicalDevice();
 	auto& swapChainImages = m_swapchain.GetImage();
 	assert(presentCompleteSemaphores.empty());

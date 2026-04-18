@@ -56,6 +56,45 @@ void CommandPool::transition_image_layout(auto& cmd,Swapchain& swapchain,uint32_
 
 }
 
+
+void CommandPool::transitionImageLayout(const vk::raii::Image& image, vk::ImageLayout oldLayout, vk::ImageLayout newLayout, LogicalDevice& LogicalDev)
+{
+	std::unique_ptr<vk::raii::CommandBuffer> CommandBuffer = beginSingleTimeCommands(LogicalDev);
+
+	vk::ImageMemoryBarrier barrier{};
+	barrier.oldLayout = oldLayout;
+	barrier.newLayout = newLayout;
+	barrier.image = image;
+	barrier.subresourceRange = { vk::ImageAspectFlagBits::eColor,0,1,0,1 };
+
+	vk::PipelineStageFlags sourceStage;
+	vk::PipelineStageFlags destinationStage;
+
+	if (oldLayout == vk::ImageLayout::eUndefined && newLayout == vk::ImageLayout::eTransferDstOptimal)
+	{
+		barrier.srcAccessMask = {};
+		barrier.dstAccessMask = vk::AccessFlagBits::eTransferWrite;
+
+		sourceStage = vk::PipelineStageFlagBits::eTopOfPipe;
+		destinationStage = vk::PipelineStageFlagBits::eTransfer;
+	}
+	else if (oldLayout == vk::ImageLayout::eTransferDstOptimal && newLayout == vk::ImageLayout::eShaderReadOnlyOptimal)
+	{
+		barrier.srcAccessMask = vk::AccessFlagBits::eTransferWrite;
+		barrier.dstAccessMask = vk::AccessFlagBits::eShaderRead;
+
+		sourceStage = vk::PipelineStageFlagBits::eTransfer;
+		destinationStage = vk::PipelineStageFlagBits::eFragmentShader;
+	}
+	else
+	{
+		throw std::invalid_argument("unsuppported layout transition");
+	}
+	CommandBuffer->pipelineBarrier(sourceStage, destinationStage, {}, {}, nullptr, barrier);
+	endSingleTimeCommand(*CommandBuffer,LogicalDev);
+
+}
+
 void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPileline& grapic,uint32_t imageIndex, Swapchain& swapchian,const vk::raii::Buffer& IndexBuffer, const std::vector<uint16_t>& indices, const std::vector<vk::raii::DescriptorSet>& descriptorSets)
 { 
 	const auto& pipelineLayout = grapic.GetPipelineLayout();
@@ -139,3 +178,49 @@ void CommandPool::recordCommandBuffer(vk::raii::Buffer& vertexBuffer,GrapicPilel
 
 	cmd.end();
 }
+
+void CommandPool::copyBufferToImage(const vk::raii::Buffer& buffer, vk::raii::Image& image, uint32_t width, uint32_t height,LogicalDevice& logicalDev)
+{
+	std::unique_ptr<vk::raii::CommandBuffer> commandBuffer = beginSingleTimeCommands(logicalDev);
+	vk::BufferImageCopy region{};
+	region.bufferOffset = 0;
+	region.bufferRowLength = 0;
+	region.bufferImageHeight = 0;
+	region.imageSubresource = { vk::ImageAspectFlagBits::eColor,0,0,1 };
+	region.imageOffset = vk::Offset3D{ 0,0,0 };
+	region.imageExtent = vk::Extent3D{ width,height,1 };
+
+	commandBuffer->copyBufferToImage(buffer, image, vk::ImageLayout::eTransferDstOptimal, { region });
+
+	endSingleTimeCommand(*commandBuffer,logicalDev);
+}
+
+std::unique_ptr<vk::raii::CommandBuffer> CommandPool::beginSingleTimeCommands(LogicalDevice& logicalDev)
+{
+	vk::CommandBufferAllocateInfo allocInfo{};
+	allocInfo.commandPool = *m_commandPool;
+	allocInfo.level = vk::CommandBufferLevel::ePrimary;
+	allocInfo.commandBufferCount = 1;
+
+	std::unique_ptr<vk::raii::CommandBuffer> commandBuffer = std::make_unique<vk::raii::CommandBuffer>(std::move(vk::raii::CommandBuffers(logicalDev.getLogicalDevice(), allocInfo).front()));
+
+	vk::CommandBufferBeginInfo beginInfo{};
+	beginInfo.flags = vk::CommandBufferUsageFlagBits::eOneTimeSubmit;
+	commandBuffer->begin(beginInfo);
+
+	return commandBuffer;
+}
+
+void CommandPool::endSingleTimeCommand(vk::raii::CommandBuffer& commandBuffer,LogicalDevice& logicalDev)
+{
+	commandBuffer.end();
+	vk::SubmitInfo submitInfo{};
+	submitInfo.commandBufferCount = 1;
+	submitInfo.pCommandBuffers = &*commandBuffer;
+
+	auto m_graphicQueue = logicalDev.GetQueue();
+	m_graphicQueue.submit(submitInfo, nullptr);
+	m_graphicQueue.waitIdle();
+}
+
+

@@ -1,15 +1,16 @@
 #include <iostream>
 #include "Application.hh"
-
+#include "demo.hh"
 
 
 
 int main() {
-	Application app1;
+
+	Demo demo1;;
 
 	try
 	{
-		app1.run();
+		demo1.run();
 	}
 	catch (const std::exception& e)
 	{

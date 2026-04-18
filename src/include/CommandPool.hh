@@ -32,6 +32,13 @@ public:
     uint32_t& GetFrameIndex() { return frameIndex; }
 	const vk::raii::CommandPool& GetCommandPool() const { return *m_commandPool; }
 
+	void copyBufferToImage(const vk::raii::Buffer& buffer, vk::raii::Image& image, uint32_t width, uint32_t height,LogicalDevice& logicalDev);
+
+	std::unique_ptr<vk::raii::CommandBuffer> beginSingleTimeCommands(LogicalDevice& logicaldev);
+	void endSingleTimeCommand(vk::raii::CommandBuffer& commandBuffer, LogicalDevice& logicalDev);
+
+	void transitionImageLayout(const vk::raii::Image& image, vk::ImageLayout oldLayout, vk::ImageLayout newLayout, LogicalDevice& LogicalDev);
+
 private:  
 	
 	uint32_t frameIndex = 0;

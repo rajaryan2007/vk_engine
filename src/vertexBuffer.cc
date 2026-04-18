@@ -88,13 +88,14 @@ void VertexBuffer::createBuffer(vk::DeviceSize size, vk::BufferUsageFlags usage,
 
 void VertexBuffer::copyBuffer(const vk::raii::CommandPool& commandPool, LogicalDevice& device, vk::raii::Buffer& srcBuffer, vk::raii::Buffer& dstBuffer, vk::DeviceSize size)
 {
+
 	vk::CommandBufferAllocateInfo allocInfo{};
 	allocInfo.commandPool = commandPool;
 	allocInfo.level = vk::CommandBufferLevel::ePrimary;
 	allocInfo.commandBufferCount = 1;
 
 	vk::raii::CommandBuffer commandCopyBuffer = std::move(device.getLogicalDevice().allocateCommandBuffers(allocInfo).front());
-    
+
 	vk::CommandBufferBeginInfo beginInfo{};
 	beginInfo.flags = vk::CommandBufferUsageFlagBits::eOneTimeSubmit;
 
